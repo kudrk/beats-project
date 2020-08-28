@@ -1,53 +1,281 @@
-/*
-Error: File to import not found or unreadable: scss/style.scss.
-       Load path: C:/Users/kudrk/Desktop/work/projects/Beats/css/scss
-        on line 2 of C:\Users\kudrk\Desktop\work\projects\Beats\css\scss\main.scss
+@import url(css/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+body {
+  margin: 0; }
 
-1: @import "css/normalize.css";
-2: @import "scss/style.scss";
-3: @import "scss/header.scss";
-4: @import "scss/hero.scss";
-5: @import "scss/btn.scss";
-6: @import "scss/specifications.scss";
-7: @import "scss/why.scss";
+.section {
+  font-family: "Play", Georgia, sans-serif;
+  background-color: #F5F5F5;
+  color: #292929;
+  font-size: 16px;
+  line-height: 1.42;
+  margin: 0px;
+  min-height: 40rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .section_color_white {
+    background-color: #FFFFFF;
+    padding-top: 5.65%; }
 
-Backtrace:
-C:\Users\kudrk\Desktop\work\projects\Beats\css\scss\main.scss:2
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: scss/style.scss.\A        Load path: C:/Users/kudrk/Desktop/work/projects/Beats/css/scss\A         on line 2 of C:\Users\kudrk\Desktop\work\projects\Beats\css\scss\main.scss\A \A 1: @import \"css/normalize.css\";\A 2: @import \"scss/style.scss\";\A 3: @import \"scss/header.scss\";\A 4: @import \"scss/hero.scss\";\A 5: @import \"scss/btn.scss\";\A 6: @import \"scss/specifications.scss\";\A 7: @import \"scss/why.scss\";"; }
+* {
+  box-sizing: border-box; }
+
+.container {
+  margin: 0 auto;
+  width: 980px; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+
+.logo {
+  display: block;
+  width: 40px;
+  height: 40px; }
+
+.menu {
+  font-family: "Alegreya Sans", Georgia, sans-serif; }
+
+.menu__list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  font-size: 18px; }
+  .menu__list .menu__link {
+    margin-right: 27px; }
+    .menu__list .menu__link .menu__link-title {
+      text-decoration: none;
+      color: #292929; }
+
+.contacts__phone {
+  text-decoration: none;
+  color: #292929;
+  font-size: 18px;
+  position: relative; }
+  .contacts__phone::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(/img/icons/phone.svg) center center no-repeat;
+    top: 4px;
+    left: -20px; }
+
+.hero__title {
+  max-width: 400px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 57px;
+  margin: 0;
+  text-transform: uppercase; }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 62px;
+  padding-left: 33px;
+  margin-bottom: 92px;
+  position: relative; }
+  .hero p {
+    font-family: "Alegreya Sans", Georgia, sans-serif;
+    font-size: 21px;
+    display: block;
+    max-width: 320px;
+    margin: 2% 0 3.5%;
+    line-height: 1.28; }
+  .hero .hero__img {
+    position: absolute;
+    top: 7%;
+    left: 47%;
+    border-radius: 50%;
+    width: 31rem; }
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer; }
+
+.button {
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 18px 41px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  min-width: 75px;
+  color: #FFFFFF; }
+  .button_type_order {
+    background: #E01F3D; }
+
+.specifications__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0 86px; }
+
+.specifications__item {
+  margin-right: 42px;
+  display: block;
+  max-width: 132px;
+  margin-bottom: 10px; }
+  .specifications__item_noise {
+    position: relative; }
+  .specifications__item_noise::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -43px;
+    width: 43px;
+    height: 44px;
+    left: -49px;
+    background: url(/img/icons/noise.svg) center center no-repeat;
+    background-size: cover; }
+  .specifications__item_charging {
+    position: relative; }
+  .specifications__item_charging::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -43px;
+    width: 43px;
+    height: 44px;
+    background: url(/img/icons/charging.svg) center center no-repeat;
+    background-size: cover; }
+  .specifications__item:last-child {
+    margin-right: 0;
+    max-width: 120px;
+    position: relative; }
+  .specifications__item:last-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -43px;
+    width: 43px;
+    height: 44px;
+    background: url(/img/icons/plug.svg) center center no-repeat;
+    background-size: cover; }
+
+.rectangle {
+  width: 43px;
+  height: 10px;
+  transform: rotate(135deg);
+  background: #C4C4C4;
+  position: absolute;
+  left: 71%;
+  top: 113%; }
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+  .title-block .description {
+    max-width: 34rem;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    padding: 1%; }
+
+.inner-title {
+  max-width: 400px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 57px;
+  margin: 0;
+  text-transform: uppercase;
+  max-width: 100%;
+  text-align: center; }
+  .inner-title_mini {
+    font-size: 24px;
+    text-transform: none; }
+
+.description_theme_light {
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+  margin: 0;
+  text-align: center; }
+
+.text-block {
+  padding: 4% 0; }
+  .text-block__img {
+    background-color: #F2F5F4;
+    border-radius: 50%;
+    padding: 10%; }
+  .text-block__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .text-block__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 38%; }
+  .text-block .text-block__img {
+    width: 128px;
+    height: 128px;
+    background-color: #F2F5F4;
+    border-radius: 50%;
+    margin-bottom: 1rem; }
+
+.review {
+  display: flex;
+  padding: 8% 6% 5.7%; }
+  .review__img {
+    width: 253px;
+    height: 264px;
+    flex-shrink: 0; }
+  .review__pic {
+    height: 100%;
+    object-fit: cover; }
+  .review__comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0% 2% 4%; }
+  .review p {
+    text-align: start; }
+
+.name {
+  font-weight: bold;
+  font-size: 18px; }
+
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0%;
+  margin: 0; }
+  .photo-gallery__item {
+    width: 74px;
+    height: 74px;
+    margin-right: 1rem; }
+  .photo-gallery__link {
+    cursor: pointer; }
+  .photo-gallery__link:hover .photo-gallery__pic {
+    border: 4px solid #E01F3D; }
+  .photo-gallery__link_active .photo-gallery__pic {
+    border: 4px solid #E01F3D; }
+  .photo-gallery__pic {
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover; }
+
+/*# sourceMappingURL=main.css.map */

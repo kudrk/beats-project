@@ -10,6 +10,9 @@ sans-serif;
 $textcolor:#292929;
 $btncolor:#FFFFFF;
 
+body{
+  margin: 0;
+}
 
 @mixin section {
   font-family: $fontmain;
@@ -18,7 +21,7 @@ $btncolor:#FFFFFF;
   font-size: 16px;
   line-height: 1.42;
   margin: 0px;
-  min-height: 42rem;
+  min-height: 40rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,7 +30,8 @@ $btncolor:#FFFFFF;
   @include section;
 
   &_color_white {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    padding-top: 5.65%;
   }
 }
 
