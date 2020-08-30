@@ -10,7 +10,7 @@
 
 <body>
   <div class="wrapper">
-    <div class="section">
+    <div class="section main-section">
       <div class="container hero__container">
         <header class="header">
           <div class="header__col">
@@ -43,7 +43,8 @@
           <p>Встречайте новую версию наушников из линейки Powerbeats.</p>
           <a class="button button_type_order" href="#">Заказать</a>
         </div>
-        <div class="specifications"> 
+        <div class="rectangle"></div>
+        <div class="specifications">
           <ul class="specifications__list">
             <li class="specifications__item specifications__item_noise">Безупречный звук</li>
             <li class="specifications__item specifications__item_charging">До 40 часов работы</li>
@@ -53,7 +54,6 @@
       </div>
     </div>
     <div class="section section_color_white">
-      <div class="rectangle"></div>
       <div class="container">
         <div class="title-block">
           <h2 class="inner-title">Почему beats solo 3?</h2>
@@ -84,10 +84,12 @@
             </li>
           </ul>
         </div>
+
       </div>
     </div>
-    <div class="section section_color_white">
+    <div class="section section_color_white review-section">
       <div class="container">
+        <div class="triangle"></div>
         <h2 class="inner-title">Отзывы</h2>
         <div class="review">
           <div class="review__img">
@@ -103,30 +105,121 @@
         </div>
         <ul class="photo-gallery">
           <li class="photo-gallery__item">
-            <a class="photo-gallery__link photo-gallery__link_active"><img class="photo-gallery__pic" src="/img/billie.jpg"></a>
+            <a class="photo-gallery__link photo-gallery__link_active"><img class="photo-gallery__pic"
+                src="./img/billie.jpg"></a>
           </li>
           <li class="photo-gallery__item">
-            <a class="photo-gallery__link"><img class="photo-gallery__pic" src="./img/boy.png"></a>
+            <a class="photo-gallery__link"><img class="photo-gallery__pic" src="./img/boy.jpg"></a>
           </li>
           <li class="photo-gallery__item">
-            <a class="photo-gallery__link"><img class="photo-gallery__pic" src="./img/girl.png"></a>
+            <a class="photo-gallery__link"><img class="photo-gallery__pic" src="./img/girl.jpg"></a>
           </li>
         </ul>
-
       </div>
     </div>
+    <div class="section section_type_form">
+      <div class="container">
+        <div class="pentagon"><img src="/img/icons/pentagon.png"></div>
+        <h2 class="inner-title">Закажите доставку</h2>
+        <form class="form">
+          <div class="form__col">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label">Имя</label>
+                <input class="form__input" type="text">
+              </div>
+              <div class="form__group">
+                <label class="form__label">Телефон</label>
+                <input class="form__input" type="text">
+              </div>
+            </div>
+            <div class="form__row form__row_single">
+              <label class="form__label">Улица</label>
+              <input class="form__input" type="text">
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label">Дом</label>
+                <input class="form__input" type="text">
+              </div>
+              <div class="form__group">
+                <label class="form__label">Корпус</label>
+                <input class="form__input" type="text">
+              </div>
+              <div class="form__group">
+                <label class="form__label">Квартира</label>
+                <input class="form__input" type="text">
+              </div>
+              <div class="form__group">
+                <label class="form__label">Этаж</label>
+                <input class="form__input" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="form__col">
+            <div class="form__group form__group_right">
+              <label class="form__label">Комментарий</label>
+              <textarea class="form__input form__input_textarea" type="text"></textarea>
+            </div>
+            <div class="form__row">
+              <div class="form__group form__group_controls">
+                <input class="radio" type="radio" name="option">
+                <div class="radio__visible"></div>
+                <label class="form__label">Потребуется сдача</label>
+              </div>
+              <div class="form__group form__group_controls">
+                <input class="radio" type="radio" name="option">
+                <div class="radio__visible"></div>
+                <label class="form__label">Оплата картой</label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group form__group_checkbox">
+                <input class="radio" type="checkbox">
+                <div class="radio__visible"></div>
+                <label class="form__label">Не перезванивать</label>
+              </div>
+            </div>
+            <button type="submit" class="button button_type_order">Заказать</button>
+            <button type="reset" class="button button_type_reset">Очистить</button>
+          </div>
+        </form>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
+    </div>
   </div>
-</body>
+<nav class="fixed">
+  <ul class="fixed__list">
+    <li class="fixed__item fixed__item_active">
+      <a class="fixed__link"></a>
+    </li>
+    <li class="fixed__item">
+      <a class="fixed__link"></a>
+    </li>
+    <li class="fixed__item">
+      <a class="fixed__link"></a>
+    </li>
+    <li class="fixed__item">
+      <a class="fixed__link"></a>
+    </li>
+    <li class="fixed__item">
+      <a class="fixed__link"></a>
+    </li>
+    <li class="fixed__item">
+      <a class="fixed__link"></a>
+    </li>
+    <li class="fixed__item">
+      <a class="fixed__link"></a>
+    </li>
+    <li class="fixed__item">
+      <a class="fixed__link"></a>
+    </li>
+    <li class="fixed__item">
+      <a class="fixed__link"></a>
+    </li>
+  </ul>
+</nav>
 
+
+</body>
 </html>

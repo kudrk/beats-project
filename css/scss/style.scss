@@ -10,7 +10,7 @@ sans-serif;
 $textcolor:#292929;
 $btncolor:#FFFFFF;
 
-body{
+body {
   margin: 0;
 }
 
@@ -21,6 +21,7 @@ body{
   font-size: 16px;
   line-height: 1.42;
   margin: 0px;
+  height: 100vh;
   min-height: 40rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,7 +32,14 @@ body{
 
   &_color_white {
     background-color: #FFFFFF;
-    padding-top: 5.65%;
+    padding-top: 7%;
+  }
+
+  &_type_form {
+    padding-top: 7%;
+    background: url("/img/vector.png") center center no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
   }
 }
 
@@ -42,7 +50,7 @@ body{
 
 .container {
   margin: 0 auto;
-  width: 980px;
+  width: 940px;
 }
 
 img {

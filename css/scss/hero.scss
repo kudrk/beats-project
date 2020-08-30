@@ -11,6 +11,20 @@
   @include title;
 }
 
+.main-section{
+  position: relative;
+}
+
+.rectangle {
+  width: 43px;
+  height: 10px;
+  transform: rotate(135deg);
+  background: #C4C4C4;
+  position: absolute;
+  left: 77%;
+  top: 100%;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
