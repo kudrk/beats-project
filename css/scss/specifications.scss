@@ -29,7 +29,7 @@
   &_noise::before {
     @include before;
     left: -49px;
-    background: url(img/icons/noise.svg) center center no-repeat;
+    background: url(/beats-project/img/icons/noise.svg) center center no-repeat;
     background-size: cover;
   }
 
@@ -39,7 +39,7 @@
 
   &_charging::before {
     @include before;
-    background: url(img/icons/charging.svg) center center no-repeat;
+    background: url(/beats-project/img/icons/charging.svg) center center no-repeat;
     background-size: cover;
   }
 
@@ -51,7 +51,7 @@
 
   &:last-child::before {
     @include before;
-    background: url(img/icons/plug.svg) center center no-repeat;
+    background: url(/beats-project/img/icons/plug.svg) center center no-repeat;
     background-size: cover;
   }
 }

@@ -21,7 +21,7 @@ body {
     padding-top: 7%; }
   .section_type_form {
     padding-top: 7%;
-    background: url("img/vector.png") center center no-repeat;
+    background: url("/beats-project/img/vector.png") center center no-repeat;
     background-size: cover;
     color: #FFFFFF; }
 
@@ -73,7 +73,7 @@ img {
     position: absolute;
     width: 14px;
     height: 14px;
-    background: url(img/icons/phone.svg) center center no-repeat;
+    background: url(/beats-project/img/icons/phone.svg) center center no-repeat;
     top: 4px;
     left: -20px; }
 
@@ -168,7 +168,7 @@ button {
     width: 43px;
     height: 44px;
     left: -49px;
-    background: url(img/icons/noise.svg) center center no-repeat;
+    background: url(/beats-project/img/icons/noise.svg) center center no-repeat;
     background-size: cover; }
   .specifications__item_charging {
     position: relative; }
@@ -180,7 +180,7 @@ button {
     left: -43px;
     width: 43px;
     height: 44px;
-    background: url(img/icons/charging.svg) center center no-repeat;
+    background: url(/beats-project/img/icons/charging.svg) center center no-repeat;
     background-size: cover; }
   .specifications__item:last-child {
     margin-right: 0;
@@ -194,7 +194,7 @@ button {
     left: -43px;
     width: 43px;
     height: 44px;
-    background: url(img/icons/plug.svg) center center no-repeat;
+    background: url(/beats-project/img/icons/plug.svg) center center no-repeat;
     background-size: cover; }
 
 .title-block {
@@ -247,7 +247,7 @@ button {
     max-width: 38%;
     position: relative; }
     .text-block__item:before {
-      content: url("img/icons/сombined_shape.png");
+      content: url("/beats-project/img/icons/сombined_shape.png");
       position: absolute;
       top: 21%;
       right: 0%;
@@ -353,7 +353,7 @@ button {
         cursor: pointer;
         border-radius: 4px; }
         .form__group_checkbox .radio__visible::before {
-          background: url("img/icons/checked.svg"); }
+          background: url("/beats-project/img/icons/checked.svg"); }
     .form__group_controls {
       display: flex;
       cursor: pointer; }
