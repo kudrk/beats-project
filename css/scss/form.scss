@@ -41,26 +41,27 @@
 
     &_checkbox {
       display: flex;
+    }
 
-      .radio__visible {
-        cursor: pointer;
-        border-radius: 4px;
+    &__visible {
+      cursor: pointer;
+      border-radius: 4px;
 
-        &::before {
-          background: url("../../img/vector.png");
-        }
+      &::before {
+        background: url("../../img/vector.png");
       }
     }
-
-    &_controls {
-      display: flex;
-      cursor: pointer;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
+
+  &_controls {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
 
   &__input {
     width: 100%;
@@ -84,38 +85,38 @@
     margin-right: 20px;
     cursor: pointer;
   }
-}
 
-.radio {
-  display: none;
 
-  &:checked~.form__visible {
-    &::before {
-      display: block;
+  .radio {
+    display: none;
+
+    &:checked~.form__visible {
+      &::before {
+        display: block;
+      }
     }
   }
-}
 
-.radio__visible {
-  width: 25px;
-  height: 25px;
-  position: relative;
-  border-radius: 50%;
-  background: #FFFFFF;
-  margin-right: 10px;
-  flex-shrink: 0;
-
-  &::before {
-    content: "";
-    width: 13px;
-    height: 13px;
-    background: #E01F3D;
+  .form__visible {
+    width: 25px;
+    height: 25px;
+    position: relative;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
+    background: #FFFFFF;
+    margin-right: 10px;
+    flex-shrink: 0;
 
+    &::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      background: #E01F3D;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+  }
 }
