@@ -51,17 +51,17 @@
         background: url("../../img/vector.png");
       }
     }
-  }
 
-  &_controls {
-    display: flex;
-    cursor: pointer;
-  }
 
-  &:last-child {
-    margin-right: 0;
-  }
+    &_controls {
+      display: flex;
+      cursor: pointer;
+    }
 
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
   &__input {
     width: 100%;

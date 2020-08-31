@@ -378,11 +378,11 @@ button {
       border-radius: 4px; }
       .form__group__visible::before {
         background: url("../../img/vector.png"); }
-  .form_controls {
-    display: flex;
-    cursor: pointer; }
-  .form:last-child {
-    margin-right: 0; }
+    .form__group_controls {
+      display: flex;
+      cursor: pointer; }
+    .form__group:last-child {
+      margin-right: 0; }
   .form__input {
     width: 100%;
     background: #FFFFFF;
