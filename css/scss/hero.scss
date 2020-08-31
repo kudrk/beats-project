@@ -1,0 +1,54 @@
+@mixin title {
+  max-width: 400px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 57px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  @include title;
+}
+
+.main-section{
+  position: relative;
+}
+
+.rectangle {
+  width: 43px;
+  height: 10px;
+  transform: rotate(135deg);
+  background: #C4C4C4;
+  position: absolute;
+  left: 77%;
+  top: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 62px;
+  padding-left: 33px;
+  margin-bottom: 92px;
+  position: relative;
+
+  p {
+    font-family: $fontsecond;
+    font-size: 21px;
+    display: block;
+    max-width: 320px;
+    margin: 2% 0 3.5%;
+    line-height: 1.28;
+  }
+
+  .hero__img {
+    position: absolute;
+    top: 7%;
+    left: 47%;
+    border-radius: 50%;
+    width: 31rem;
+  }
+
+}

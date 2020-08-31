@@ -1,0 +1,57 @@
+.specifications__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0 86px;
+}
+
+@mixin before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -43px;
+  width: 43px;
+  height: 44px;
+}
+
+
+.specifications__item {
+  margin-right: 42px;
+  display: block;
+  max-width: 132px;
+  margin-bottom: 10px;
+
+  &_noise {
+    position: relative;
+  }
+
+  &_noise::before {
+    @include before;
+    left: -49px;
+    background: url("../../img/icons/noise.svg") center center no-repeat;
+    background-size: cover;
+  }
+
+  &_charging {
+    position: relative;
+  }
+
+  &_charging::before {
+    @include before;
+    background: url("../../img/icons/charging.svg") center center no-repeat;
+    background-size: cover;
+  }
+
+  &:last-child {
+    margin-right: 0;
+    max-width: 120px;
+    position: relative;
+  }
+
+  &:last-child::before {
+    @include before;
+    background: url("../../img/icons/plug.svg") center center no-repeat;
+    background-size: cover;
+  }
+}

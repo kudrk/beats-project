@@ -1,0 +1,39 @@
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.button {
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 18px 41px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  min-width: 75px;
+  color: $btncolor;
+  border: none;
+
+  &_type_order {
+    background: #E01F3D;
+
+    
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  &_type_reset {
+    background: transparent;
+    text-transform: none;
+    font-weight: normal;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

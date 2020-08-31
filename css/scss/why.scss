@@ -1,0 +1,80 @@
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .description {
+    max-width: 34rem;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    padding: 1%;
+  }
+}
+
+.inner-title {
+  @include title;
+  max-width: 100%;
+  text-align: center;
+
+  &_mini {
+    font-size: 24px;
+    text-transform: none;
+  }
+}
+
+.description_theme_light {
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+  margin: 0;
+  text-align: center;
+}
+
+.text-block {
+  padding: 4% 0;
+
+  &__img {
+    background-color: #F2F5F4;
+    border-radius: 50%;
+    padding: 10%;
+  }
+
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 38%;
+    position: relative;
+
+    &:before {
+      content: url("../../img/icons/сombined_shape.png");
+      position: absolute;
+      top: 21%;
+      right: 0%;
+      transform: translateX(50%);
+    }
+
+    &:last-child::before {
+      display: none;
+    }
+  }
+
+
+  .text-block__img {
+    width: 128px;
+    height: 128px;
+    background-color: #F2F5F4;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+}
+
