@@ -9,6 +9,8 @@ body {
   font-family: "Play", Georgia, sans-serif;
   background-color: #F5F5F5;
   color: #292929;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 1.42;
   margin: 0px;
@@ -21,7 +23,7 @@ body {
     padding-top: 7%; }
   .section_type_form {
     padding-top: 7%;
-    background: url("/beats-project/img/vector.png") center center no-repeat;
+    background: url("../img/vector.png") center center no-repeat;
     background-size: cover;
     color: #FFFFFF; }
 
@@ -31,6 +33,11 @@ body {
 .container {
   margin: 0 auto;
   width: 940px; }
+  .container__main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
 
 img {
   display: block;
@@ -73,7 +80,7 @@ img {
     position: absolute;
     width: 14px;
     height: 14px;
-    background: url(/beats-project/img/icons/phone.svg) center center no-repeat;
+    background: url(../img/icons/phone.svg) center center no-repeat;
     top: 4px;
     left: -20px; }
 
@@ -168,7 +175,7 @@ button {
     width: 43px;
     height: 44px;
     left: -49px;
-    background: url(/beats-project/img/icons/noise.svg) center center no-repeat;
+    background: url(../img/icons/noise.svg) center center no-repeat;
     background-size: cover; }
   .specifications__item_charging {
     position: relative; }
@@ -180,7 +187,7 @@ button {
     left: -43px;
     width: 43px;
     height: 44px;
-    background: url(/beats-project/img/icons/charging.svg) center center no-repeat;
+    background: url(../img/icons/charging.svg) center center no-repeat;
     background-size: cover; }
   .specifications__item:last-child {
     margin-right: 0;
@@ -194,7 +201,7 @@ button {
     left: -43px;
     width: 43px;
     height: 44px;
-    background: url(/beats-project/img/icons/plug.svg) center center no-repeat;
+    background: url(../img/icons/plug.svg) center center no-repeat;
     background-size: cover; }
 
 .title-block {
@@ -247,7 +254,7 @@ button {
     max-width: 38%;
     position: relative; }
     .text-block__item:before {
-      content: url("/beats-project/img/icons/сombined_shape.png");
+      content: url("../img/icons/сombined_shape.png");
       position: absolute;
       top: 21%;
       right: 0%;
@@ -263,7 +270,20 @@ button {
 
 .review {
   display: flex;
-  padding: 9% 5% 5%; }
+  padding: 5% 5% 5%;
+  margin-bottom: 3rem;
+  background: #F8FAF9;
+  position: relative; }
+  .review::before {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 90%;
+    left: 45%;
+    width: 83px;
+    height: 83px;
+    background: #fff;
+    border-radius: 50%; }
   .review__img {
     width: 253px;
     height: 264px;
@@ -308,6 +328,10 @@ button {
 .review-section {
   position: relative;
   padding-top: 4%; }
+  .review-section .inner-title {
+    margin: 0 0 3rem; }
+  .review-section .inner-title_mini {
+    margin-bottom: 0; }
 
 .triangle {
   width: 0;
@@ -353,7 +377,7 @@ button {
         cursor: pointer;
         border-radius: 4px; }
         .form__group_checkbox .radio__visible::before {
-          background: url("/beats-project/img/icons/checked.svg"); }
+          background: url("../img/icons/checked.svg"); }
     .form__group_controls {
       display: flex;
       cursor: pointer; }
@@ -376,7 +400,7 @@ button {
 
 .radio {
   display: none; }
-  .radio:checked ~ .radio__visible::before {
+  .radio:checked ~ .form__visible::before {
     display: block; }
 
 .radio__visible {
@@ -433,5 +457,3 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-
-/*# sourceMappingURL=main.css.map */

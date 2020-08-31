@@ -1,7 +1,22 @@
 .review {
   display: flex;
-  padding: 9% 5% 5%;
-  
+  padding: 5% 5% 5%;
+  margin-bottom: 3rem;
+  background: #F8FAF9;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 90%;
+    left: 45%;
+    width: 83px;
+    height: 83px;
+    background: #fff;
+    border-radius: 50%;
+  }
+
 
   &__img {
     width: 253px;
@@ -68,6 +83,14 @@
 .review-section {
   position: relative;
   padding-top: 4%;
+
+  .inner-title {
+    margin: 0 0 3rem;
+  }
+
+  .inner-title_mini {
+    margin-bottom: 0;
+  }
 }
 
 .triangle {

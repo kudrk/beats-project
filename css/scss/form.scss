@@ -47,7 +47,7 @@
         border-radius: 4px;
 
         &::before {
-          background: url("/beats-project/img/icons/checked.svg");
+          background: url("../img/icons/checked.svg");
         }
       }
     }
@@ -89,7 +89,7 @@
 .radio {
   display: none;
 
-  &:checked~.radio__visible {
+  &:checked~.form__visible {
     &::before {
       display: block;
     }

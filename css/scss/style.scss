@@ -18,6 +18,8 @@ body {
   font-family: $fontmain;
   background-color: #F5F5F5;
   color: $textcolor;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 1.42;
   margin: 0px;
@@ -37,7 +39,7 @@ body {
 
   &_type_form {
     padding-top: 7%;
-    background: url("/beats-project/img/vector.png") center center no-repeat;
+    background: url("../img/vector.png") center center no-repeat;
     background-size: cover;
     color: #FFFFFF;
   }
@@ -51,6 +53,13 @@ body {
 .container {
   margin: 0 auto;
   width: 940px;
+
+  &__main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 img {
