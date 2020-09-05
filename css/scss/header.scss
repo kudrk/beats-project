@@ -1,14 +1,28 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding-top: 1.25rem;
+
+  &__col {
+    flex-shrink: 0;
+
+    &:first-child {
+      margin-right: 2rem;
+    }
+  }
 }
 
 .logo {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.beats-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #E01F3D;
 }
 
 .menu {
@@ -20,10 +34,11 @@
   padding: 0;
   list-style: none;
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
 
   .menu__link {
-    margin-right: 27px;
+    margin-right: 1.6875rem;
+    flex-shrink: 0;
 
     .menu__link-title {
       text-decoration: none;
@@ -32,20 +47,20 @@
   }
 }
 
-.contacts__phone {
-  text-decoration: none;
-  color: $textcolor;
-  font-size: 18px;
-  position: relative;
+.contacts {
+  display: flex;
+  align-items: center;
 
-  &::before{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    background: url("../../img/icons/phone.svg") center center no-repeat;
-    top: 4px;
-    left: -20px;
+  .phone-icon {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-right: 0.625rem;
+  }
+
+  .contacts-phone {
+    text-decoration: none;
+    color: $textcolor;
+    font-size: 1.125rem;
+    position: relative;
   }
 }

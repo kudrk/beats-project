@@ -10,7 +10,7 @@
 }
 
 .fixed__item {
-  margin-bottom: 3.5px;
+  margin-bottom: 0.2188rem;
 
   &_active {
     .fixed__link {
@@ -24,8 +24,8 @@
 }
 
 .fixed__link {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;
@@ -34,8 +34,8 @@
   &::before {
     content: "";
     display: block;
-    width: 7px;
-    height: 7px;
+    width: 0.4375rem;
+    height: 0.4375rem;
     border-radius: 50%;
     background: #666666;
     position: absolute;
@@ -45,4 +45,3 @@
   }
 }
 
-// color: ;

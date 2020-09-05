@@ -1,8 +1,8 @@
 @mixin title {
-  max-width: 400px;
+  max-width: 25rem;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 57px;
+  font-size: 3rem;
+  line-height: 3.5625rem;
   margin: 0;
   text-transform: uppercase;
 }
@@ -11,13 +11,14 @@
   @include title;
 }
 
-.main-section{
+.main-section {
   position: relative;
+  height: 100%;
 }
 
 .rectangle {
-  width: 43px;
-  height: 10px;
+  width: 2.6875rem;
+  height: 0.625rem;
   transform: rotate(135deg);
   background: #C4C4C4;
   position: absolute;
@@ -29,16 +30,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 62px;
-  padding-left: 33px;
-  margin-bottom: 92px;
+  padding-top: 3.875rem;
+  margin-bottom: 5.75rem;
   position: relative;
 
   p {
     font-family: $fontsecond;
-    font-size: 21px;
+    font-size: 1.3125rem;
     display: block;
-    max-width: 320px;
+    max-width: 20rem;
     margin: 2% 0 3.5%;
     line-height: 1.28;
   }

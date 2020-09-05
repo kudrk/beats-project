@@ -1,11 +1,12 @@
 .section_type_form {
   position: relative;
+  height: 100%;
 }
 
 .pentagon {
   position: absolute;
-  top: -35px;
-  right: 162px;
+  top: -2.1875rem;
+  right: 10.125rem;
 }
 
 .form {
@@ -14,7 +15,7 @@
 
   &__col {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 
     &:last-child {
       margin-right: 0;
@@ -23,7 +24,7 @@
 
   &__row {
     display: flex;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 
     &_single {
       flex-direction: column;
@@ -32,10 +33,10 @@
 
   &__group {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 
     &_right {
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
       margin-right: 0;
     }
 
@@ -45,7 +46,7 @@
 
     &__visible {
       cursor: pointer;
-      border-radius: 4px;
+      border-radius: 0.25rem;
 
       &::before {
         background: url("../../img/vector.png");
@@ -66,12 +67,12 @@
   &__input {
     width: 100%;
     background: #FFFFFF;
-    border-radius: 4px;
-    padding: 18px 12px;
-    border: 3px solid transparent;
+    border-radius: 0.25rem;
+    padding: 1.125rem 0.75rem;
+    border: 0.1875rem solid transparent;
 
     &_textarea {
-      min-height: 170px;
+      min-height: 10.625rem;
     }
 
     &:hover,
@@ -82,7 +83,7 @@
   }
 
   &__label {
-    margin-right: 20px;
+    margin-right: 1.25rem;
     cursor: pointer;
   }
 
@@ -98,18 +99,18 @@
   }
 
   .form__visible {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     position: relative;
     border-radius: 50%;
     background: #FFFFFF;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     flex-shrink: 0;
 
     &::before {
       content: "";
-      width: 13px;
-      height: 13px;
+      width: 0.8125rem;
+      height: 0.8125rem;
       background: #E01F3D;
       border-radius: 50%;
       position: absolute;

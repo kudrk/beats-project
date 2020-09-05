@@ -1,0 +1,25 @@
+.footer {
+  max-height: 5.375rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #FFFFFF;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+}
+
+.footer__col .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts__tel {
+  display: flex;
+  align-items: center;
+}

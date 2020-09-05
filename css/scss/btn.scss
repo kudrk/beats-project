@@ -7,18 +7,22 @@ button {
 
 .button {
   text-decoration: none;
-  border-radius: 100px;
-  padding: 18px 41px;
+  border-radius: 6.25rem;
+  padding: 1.125rem 2.5625rem;
   text-align: center;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
-  min-width: 75px;
+  min-width: 4.6875rem;
   color: $btncolor;
   border: none;
+  transition: .3s;
 
   &_type_order {
     background: #E01F3D;
+    &:hover{
+      background: #CA1B36;
+    }
 
     
     &:focus {
