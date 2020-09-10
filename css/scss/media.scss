@@ -10,6 +10,12 @@
   }
 }
 
+@mixin mini {
+  @media screen and (max-width: $mini) {
+    @content;
+  }
+}
+
 .fixed {
   @include tablets {
     display: none;
@@ -57,6 +63,18 @@
   }
 }
 
+
+.hero::before {
+  @include mini {
+    content: "";
+    background-image: url(../../img/headphones_mini.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 230px;
+  }
+}
+
 .hero__title {
   @include tablets {
     max-width: 40rem;
@@ -95,6 +113,12 @@
   @include tablets {
     width: 8.125rem;
     height: 8.125rem;
+  }
+}
+
+.section {
+  @include tablets {
+    min-height: 62.5rem;
   }
 }
 
@@ -181,9 +205,21 @@
   }
 }
 
+.pentagon {
+  @include phones {
+    right: 2.125rem;
+  }
+}
+
 .form {
   @include phones {
     padding: 7% 0;
+
+    &__col {
+      @include phones {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -192,12 +228,23 @@
     display: flex;
     justify-content: center;
   }
+
+  .form__row {
+    @include mini {
+      display: flex;
+      font-size: small;
+    }
+  }
 }
 
 .form__group_checkbox {
   @include phones {
     display: flex;
     justify-content: center;
+  }
+
+  @include mini {
+    font-size: small;
   }
 }
 

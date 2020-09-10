@@ -13,7 +13,6 @@
 
 .main-section {
   position: relative;
-  height: 100%;
 }
 
 .rectangle {
@@ -34,6 +33,15 @@
   margin-bottom: 5.75rem;
   position: relative;
 
+  &__pic {
+    display: flex;
+    flex: 0;
+    top: 14%;
+    right: 3%;
+    position: absolute;
+    width: 50%;
+  }
+
   p {
     font-family: $fontsecond;
     font-size: 1.3125rem;
@@ -44,9 +52,6 @@
   }
 
   .hero__img {
-    position: absolute;
-    top: 7%;
-    left: 47%;
     border-radius: 50%;
     width: 31rem;
   }
