@@ -565,8 +565,9 @@ button {
     font-family: "Play", Georgia, sans-serif; }
 
 .section-slider {
-  padding-top: 4%;
-  position: relative; }
+  padding-top: 4%; }
+  .section-slider__logo {
+    position: relative; }
   .section-slider__inner {
     display: flex;
     padding: 0 2%;
@@ -585,7 +586,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5625rem; }
+    margin-bottom: 1.5625rem;
+    position: relative; }
   .section-slider__pic {
     margin-right: 3.6875rem; }
   .section-slider .inner-title {
@@ -654,22 +656,20 @@ button {
   padding: 1.5625rem;
   display: none;
   position: absolute;
-  right: 11.5%;
-  top: 10rem; }
-
-.dropdown__list {
-  padding: 0;
-  list-style: none; }
-
-.dropdown__item {
-  margin-bottom: 25px;
-  display: flex;
-  align-items: center; }
-  .dropdown__item img {
-    width: 25px;
-    margin-right: 20px; }
-  .dropdown__item span {
-    margin-left: auto; }
+  right: 52px;
+  top: 0px; }
+  .dropdown__info .dropdown__list {
+    padding: 0;
+    list-style: none; }
+  .dropdown__info .dropdown__item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center; }
+    .dropdown__info .dropdown__item img {
+      width: 25px;
+      margin-right: 20px; }
+    .dropdown__info .dropdown__item span {
+      margin-left: auto; }
 
 .section-slider__box:hover + .dropdown__info {
   display: block; }

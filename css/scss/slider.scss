@@ -1,6 +1,9 @@
 .section-slider {
   padding-top: 4%;
-  position: relative;
+
+  &__logo {
+    position: relative;
+  }
 
   &__inner {
     display: flex;
@@ -25,6 +28,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5625rem;
+    position: relative;
   }
 
   &__pic {
