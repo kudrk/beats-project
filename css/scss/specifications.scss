@@ -1,0 +1,34 @@
+.specifications {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    margin-right: 2.625rem;
+    display: flex;
+    max-width: 9.25rem;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}
+
+.noise-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.charging-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.plug-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
