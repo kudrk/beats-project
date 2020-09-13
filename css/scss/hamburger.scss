@@ -1,0 +1,14 @@
+.hamburger {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 24px;
+  display: none;
+
+  &__line {
+    display: block;
+    background-color: #000;
+    height: 4px;
+    border-radius: 10px;
+  }
+}

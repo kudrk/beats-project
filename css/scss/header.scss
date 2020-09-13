@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+
+  &__col:first-child {
+    margin-right: 2rem;
+  }
+}
+
+.logo {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.beats-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #E01F3D;
+}
+
+.menu {
+  font-family: $fontsecond;
+}
+
+.menu__list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  font-size: 1.125rem;
+  flex-wrap: wrap;
+
+  .menu__link {
+    margin-right: 1.6875rem;
+    flex-shrink: 0;
+
+    .menu__link-title {
+      text-decoration: none;
+      color: $textcolor;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  .phone-icon {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-right: 0.625rem;
+  }
+
+  .contacts-phone {
+    text-decoration: none;
+    color: $textcolor;
+    font-size: 1.125rem;
+    position: relative;
+    white-space: nowrap;
+  }
+}
