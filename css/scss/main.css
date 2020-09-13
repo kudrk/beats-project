@@ -565,7 +565,8 @@ button {
     font-family: "Play", Georgia, sans-serif; }
 
 .section-slider {
-  padding-top: 4%; }
+  padding-top: 4%;
+  position: relative; }
   .section-slider__logo {
     position: relative; }
   .section-slider__inner {
