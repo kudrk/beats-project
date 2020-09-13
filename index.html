@@ -14,14 +14,15 @@
       <div class="container container__main">
         <header class="header">
           <div class="header__col">
-            <a class="logo">
+            <a class="logo" href="/">
               <svg class="beats-icon">
                 <use xlink:href="./sprite.svg#beats-logo"></use>
               </svg>
             </a>
           </div>
           <div class="header__col header__col_center">
-            <nav class="menu">
+            <nav id="menu" class="menu">
+              <div id="menu__croce" class="menu__croce"><a href="#" class="croce"></a></div>
               <ul class="menu__list">
                 <li class="menu__link"><a class="menu__link-title" href="#">О нас</a></li>
                 <li class="menu__link"><a class="menu__link-title" href="#">Наушники</a></li>
@@ -32,6 +33,7 @@
                 <li class="menu__link"><a class="menu__link-title" href="#">Контакты</a></li>
               </ul>
             </nav>
+
           </div>
           <div class="header__col header__col_right">
             <adress class="contacts header__contacts">
@@ -41,7 +43,7 @@
               <a href="tel:+78009039090" class="contacts-phone">8 800 903 90 90</a>
             </adress>
           </div>
-          <a href="#" class="hamburger">
+          <a href="#" class="hamburger" id="hamburger">
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
@@ -138,9 +140,85 @@
 
       </div>
     </div>
+    <div class="section section-slider">
+      <div class="triangle"></div>
+      <div class="container">
+        <div class="slider">
+          <div class="arrow">
+            <svg class="arrow-icon">
+              <use xlink:href="./sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="section-slider__inner">
+            <div class="section-slider__pic">
+              <img class="section-slider__img" src="./img/silverbeats.png">
+            </div>
+            <div class="section-slider__description">
+              <div class="section-slider__logo">
+                <div class="section-slider__box">
+                  <svg class="gear">
+                    <use xlink:href="./sprite.svg#gear"></use>
+                  </svg></div>
+                <div class="dropdown__info">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item"><img src="./img/icons/bluetooth.svg">Bluetooth <span>4.0</span> </li>
+                    <li class="dropdown__item"><img src="./img/icons/road.svg">Дальность <span>12м</span></li>
+                    <li class="dropdown__item"><img src="./img/icons/charger.svg">Зарядка <span>3ч</span></li>
+                    <li class="dropdown__item"><img src="./img/icons/kg.svg">Вес <span>215гр</span></li>
+                    <li class="dropdown__item"><img src="./img/icons/patent.svg">Гарантия <span>1год</span></li>
+                  </ul>
+                </div>
+
+              </div>
+              <h2 class="inner-title">beats solo 3. цвет
+                «атласное серебро»</h2>
+              <div class="section-slider__about">
+                <p class="description description_theme_light">
+                  Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
+                  iPhone
+                  —
+                  они мгновенно подключатся к нему.
+                </p>
+                <div class="technical">
+                  <div class="technical__charging">
+                    Зарядка <span class="technical__bold">2&nbsp;часа</span>
+                  </div>
+                  <div class="technical__weight">
+                    Вес <span class="technical__bold">215&nbsp;грамм</span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span class="price__rub">14 990 ₽</span>
+                  <a class="button button_type_order" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow">
+            <svg class="arrow-icon">
+              <use xlink:href="./sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="square"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="section section_color_white review-section">
       <div class="container">
-        <div class="triangle"></div>
         <h2 class="inner-title">Отзывы</h2>
         <div class="review">
           <div class="review__img">
@@ -215,22 +293,22 @@
             <div class="cntrls">
               <div class="form__row">
                 <div class="form__group form__group_controls">
-                  <input class="radio" type="radio" name="option">
+                  <input id="radio1" class="radio" type="radio" name="option">
                   <div class="form__visible"></div>
-                  <label class="form__label">Потребуется&nbsp;сдача</label>
+                  <label for="radio1" class="form__label">Потребуется&nbsp;сдача</label>
                 </div>
                 <div class="form__group form__group_controls">
-                  <input class="radio" type="radio" name="option">
+                  <input id="radio2" class="radio" type="radio" name="option">
                   <div class="form__visible"></div>
-                  <label class="form__label">Оплата&nbsp;картой</label>
+                  <label for="radio2" class="form__label">Оплата&nbsp;картой</label>
                 </div>
               </div>
             </div>
             <div class="form__row">
               <div class="form__group form__group_checkbox">
-                <input class="radio" type="checkbox">
+                <input class="radio" type="checkbox" id="radio3">
                 <div class="form__visible"></div>
-                <label class="form__label">Не перезванивать</label>
+                <label for="radio3" class="form__label">Не перезванивать</label>
               </div>
             </div>
 
@@ -329,6 +407,7 @@
       </div>
     </footer>
   </div>
+  <script src="main.js"></script>
 </body>
 
 </html>

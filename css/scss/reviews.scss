@@ -52,7 +52,7 @@
   justify-content: center;
   list-style: none;
   padding: 0%;
- 
+
 
   &__item {
     width: 4.625rem;
@@ -81,7 +81,6 @@
 }
 
 .review-section {
-  position: relative;
   padding-top: 4%;
 
   .inner-title {
@@ -91,16 +90,4 @@
   .inner-title_mini {
     margin-bottom: 0;
   }
-}
-
-.triangle {
-  width: 0;
-  height: 0px;
-  border-left: 1.25rem solid transparent;
-  border-right: 1.25rem solid transparent;
-  border-top: 2.25rem solid #E01F3D;
-  position: absolute;
-  transform: rotate(45deg);
-  top: 1%;
-  left: 19%;
 }

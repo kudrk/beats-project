@@ -332,23 +332,11 @@ button {
     object-fit: cover; }
 
 .review-section {
-  position: relative;
   padding-top: 4%; }
   .review-section .inner-title {
     margin: 0 0 3rem; }
   .review-section .inner-title_mini {
     margin-bottom: 0; }
-
-.triangle {
-  width: 0;
-  height: 0px;
-  border-left: 1.25rem solid transparent;
-  border-right: 1.25rem solid transparent;
-  border-top: 2.25rem solid #E01F3D;
-  position: absolute;
-  transform: rotate(45deg);
-  top: 1%;
-  left: 19%; }
 
 .section_type_form {
   position: relative; }
@@ -414,7 +402,8 @@ button {
     border-radius: 50%;
     background: #FFFFFF;
     margin-right: 0.625rem;
-    flex-shrink: 0; }
+    flex-shrink: 0;
+    cursor: auto; }
     .form .form__visible::before {
       content: "";
       width: 0.8125rem;
@@ -521,6 +510,170 @@ button {
     height: 4px;
     border-radius: 10px; }
 
+.menu__croce {
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+
+.croce {
+  width: 5px;
+  display: none;
+  height: 40px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transform: rotate(45deg); }
+  .croce:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%); }
+
+.menu_fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #666666;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center; }
+  .menu_fullscreen .croce {
+    display: block; }
+  .menu_fullscreen .menu__list {
+    flex-direction: column;
+    align-items: center; }
+  .menu_fullscreen .menu__link {
+    margin-right: 0;
+    margin-bottom: 1.875rem;
+    font-size: 2.25rem; }
+    .menu_fullscreen .menu__link:last-child {
+      margin-bottom: 0; }
+  .menu_fullscreen .menu__list .menu__link-title {
+    color: #fff;
+    font-family: "Play", Georgia, sans-serif; }
+
+.section-slider {
+  padding-top: 4%;
+  position: relative; }
+  .section-slider__inner {
+    display: flex;
+    padding: 0 2%;
+    align-items: center; }
+  .section-slider__description {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .section-slider__box {
+    width: 5.6875rem;
+    height: 5.6875rem;
+    border-radius: 4px;
+    background: #9A9A9A;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5625rem; }
+  .section-slider__pic {
+    margin-right: 3.6875rem; }
+  .section-slider .inner-title {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    text-align: start; }
+  .section-slider .description_theme_light {
+    text-align: inherit;
+    margin-bottom: 30px; }
+
+.slider {
+  display: flex;
+  align-items: center; }
+
+.arrow-icon {
+  width: 13.5px;
+  height: 27px; }
+
+.gear {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fff; }
+
+.technical {
+  display: flex;
+  color: #666666;
+  margin-bottom: 1.5625rem; }
+  .technical__charging, .technical__weight {
+    max-width: 3.875rem;
+    margin-right: 5rem; }
+  .technical__bold {
+    font-weight: bold;
+    color: #000; }
+
+.price {
+  display: flex;
+  justify-content: flex-start; }
+  .price__rub {
+    font-size: 2.25rem;
+    margin-right: 1.25rem; }
+
+.triangle {
+  width: 0;
+  height: 0px;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+  border-top: 2.25rem solid #E01F3D;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -1%;
+  left: 19%; }
+
+.square {
+  width: 24px;
+  height: 24px;
+  background: #292929;
+  transform: rotate(30deg);
+  position: absolute;
+  bottom: -10px;
+  right: 15%; }
+
+.dropdown__info {
+  background: white;
+  width: 18.375rem;
+  border-radius: 4px;
+  padding: 1.5625rem;
+  display: none;
+  position: absolute;
+  right: 11.5%;
+  top: 10rem; }
+
+.dropdown__list {
+  padding: 0;
+  list-style: none; }
+
+.dropdown__item {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center; }
+  .dropdown__item img {
+    width: 25px;
+    margin-right: 20px; }
+  .dropdown__item span {
+    margin-left: auto; }
+
+.section-slider__box:hover + .dropdown__info {
+  display: block; }
+
 @media screen and (max-width: 768px) {
   .fixed {
     display: none; } }
@@ -570,6 +723,61 @@ button {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-flex; } }
+
+@media screen and (max-width: 768px) {
+  .menu_fullscreen {
+    display: flex; } }
+
+@media screen and (max-width: 768px) {
+  .section-slider__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2%; } }
+
+@media screen and (max-width: 768px) {
+  .section-slider__box {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .section-slider__pic {
+    margin: 0 0 10%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    max-width: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .section-slider__description {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .section-slider .inner-title {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 0.875rem; } }
+
+@media screen and (max-width: 768px) {
+  .technical {
+    justify-content: space-evenly; } }
+
+@media screen and (max-width: 768px) {
+  .technical__charging,
+  .technical__weight {
+    max-width: 3.875rem;
+    margin-right: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .price {
+    align-items: center;
+    justify-content: center; } }
 
 @media screen and (max-width: 768px) {
   .review {

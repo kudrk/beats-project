@@ -12,3 +12,73 @@
     border-radius: 10px;
   }
 }
+
+.menu__croce {
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.croce {
+  width: 5px;
+  display: none;
+  height: 40px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transform: rotate(45deg);
+
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.menu_fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #666666;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  .croce {
+    display: block;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu__link {
+    margin-right: 0;
+    margin-bottom: 1.875rem;
+    font-size: 2.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .menu__list .menu__link-title {
+    color: #fff;
+    font-family: $fontmain;
+  }
+}
