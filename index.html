@@ -8,7 +8,7 @@
   <link href="./css/scss/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="no-scroll">
   <div class="wrapper">
     <div class="section main-section">
       <div class="container container__main">
@@ -142,80 +142,134 @@
     </div>
     <div class="section section-slider">
       <div class="triangle"></div>
-      <div class="container">
+      <div class="container container_type_slider">
+        <div class="arrow arrow_type_left">
+          <svg class="arrow-icon">
+            <use xlink:href="./sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
         <div class="slider">
-          <div class="arrow">
-            <svg class="arrow-icon">
-              <use xlink:href="./sprite.svg#arrow-left"></use>
-            </svg>
-          </div>
-          <div class="section-slider__inner">
-            <div class="section-slider__pic">
-              <img class="section-slider__img" src="./img/silverbeats.png">
-            </div>
-            <div class="section-slider__description">
-              <div class="section-slider__logo">
-                <div class="section-slider__box">
-                  <svg class="gear">
-                    <use xlink:href="./sprite.svg#gear"></use>
-                  </svg></div>
-                <div class="dropdown__info">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__item"><img src="./img/icons/bluetooth.svg">Bluetooth <span>4.0</span> </li>
-                    <li class="dropdown__item"><img src="./img/icons/road.svg">Дальность <span>12м</span></li>
-                    <li class="dropdown__item"><img src="./img/icons/charger.svg">Зарядка <span>3ч</span></li>
-                    <li class="dropdown__item"><img src="./img/icons/kg.svg">Вес <span>215гр</span></li>
-                    <li class="dropdown__item"><img src="./img/icons/patent.svg">Гарантия <span>1год</span></li>
-                  </ul>
-                </div>
-
+          <ul class="section-slider__list">
+            <li class="section-slider__inner">
+              <div class="section-slider__pic">
+                <img class="section-slider__img" src="./img/silverbeats.png">
               </div>
-              <h2 class="inner-title">beats solo 3. цвет
-                «атласное серебро»</h2>
-              <div class="section-slider__about">
-                <p class="description description_theme_light">
-                  Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
-                  iPhone
-                  —
-                  они мгновенно подключатся к нему.
-                </p>
-                <div class="technical">
-                  <div class="technical__charging">
-                    Зарядка <span class="technical__bold">2&nbsp;часа</span>
-                  </div>
-                  <div class="technical__weight">
-                    Вес <span class="technical__bold">215&nbsp;грамм</span>
+              <div class="section-slider__description">
+                <div class="section-slider__logo">
+                  <div class="section-slider__box">
+                    <svg class="gear">
+                      <use xlink:href="./sprite.svg#gear"></use>
+                    </svg>
+                    <div class="dropdown__info">
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item"><img src="./img/icons/bluetooth.svg">Bluetooth <span>4.0</span> </li>
+                        <li class="dropdown__item"><img src="./img/icons/road.svg">Дальность <span>12м</span></li>
+                        <li class="dropdown__item"><img src="./img/icons/charger.svg">Зарядка <span>3ч</span></li>
+                        <li class="dropdown__item"><img src="./img/icons/kg.svg">Вес <span>215гр</span></li>
+                        <li class="dropdown__item"><img src="./img/icons/patent.svg">Гарантия <span>1год</span></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="price">
-                  <span class="price__rub">14 990 ₽</span>
-                  <a class="button button_type_order" href="#">Заказать</a>
+                <h2 class="inner-title">beats solo 3. цвет
+                  «атласное серебро»</h2>
+                <div class="section-slider__about">
+                  <p class="description description_theme_light">
+                    Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
+                    iPhone
+                    —
+                    они мгновенно подключатся к нему.
+                  </p>
+                  <div class="technical">
+                    <div class="technical__charging">
+                      Зарядка <span class="technical__bold">2&nbsp;часа</span>
+                    </div>
+                    <div class="technical__weight">
+                      Вес <span class="technical__bold">215&nbsp;грамм</span>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <span class="price__rub">14 990 ₽</span>
+                    <a class="button button_type_order" href="#">Заказать</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="arrow">
-            <svg class="arrow-icon">
-              <use xlink:href="./sprite.svg#arrow-right"></use>
-            </svg>
-          </div>
+            </li>
+          </ul>
+        </div>
+        <div class="arrow arrow_type_right">
+          <svg class="arrow-icon">
+            <use xlink:href="./sprite.svg#arrow-right"></use>
+          </svg>
         </div>
       </div>
       <div class="square"></div>
     </div>
+    <div class="section section_color_white crew-section">
+      <div class="container container__crew">
+        <div class="title-block">
+          <h2 class="inner-title">Команда</h2>
+        </div>
+        <div class="crew-section__crew">
+          <ul class="crew-section__list">
+            <li class="crew-section__item">
+              <div class="crew-section__img">
+                <img class="crew-section__pic" src="./img/1.png">
+              </div>
+              <span class="name">Борис Федорович</span>
+              <div class="more"></div>
+              <div class="mini-drop">
+                <span class="prof">Главный технолог</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime fugit recusandae beatae
+                  sint facere, optio totam velit. At quisquam atque iure non cum accusamus praesentium minima iusto ut
+                  quae.</p>
+              </div>
+            </li>
+            <li class="crew-section__item">
+              <div class="crew-section__img">
+                <img class="crew-section__pic" src="./img/2.png">
+              </div>
+              <span class="name">Алла Иванова</span>
+              <div class="more"></div>
+              <div class="mini-drop">
+                <span class="prof">Специалист</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime fugit recusandae beatae
+                  sint facere, optio totam velit. At quisquam atque iure non cum accusamus praesentium minima iusto ut
+                  quae.</p>
+              </div>
+            </li>
+            <li class="crew-section__item">
+              <div class="crew-section__img">
+                <img class="crew-section__pic" src="./img/3.png">
+              </div>
+              <span class="name">Кирилл Матросов</span>
+              <div class="more"></div>
+              <div class="mini-drop">
+                <span class="prof">Оператор</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime fugit recusandae beatae
+                  sint facere, optio totam velit. At quisquam atque iure non cum accusamus praesentium minima iusto ut
+                  quae.</p>
+              </div>
+            </li>
+            <li class="crew-section__item">
+              <div class="crew-section__img">
+                <img class="crew-section__pic" src="./img/4.png">
+              </div>
+              <span class="name">Мила Рыжкова</span>
+              <div class="more"></div>
+              <div class="mini-drop">
+                <span class="prof">PR, маркетинг</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime fugit recusandae beatae
+                  sint facere, optio totam velit. At quisquam atque iure non cum accusamus praesentium minima iusto ut
+                  quae.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
+      </div>
+    </div>
 
     <div class="section section_color_white review-section">
       <div class="container">
@@ -319,95 +373,99 @@
           </div>
         </form>
       </div>
-
     </div>
-  </div>
-  <nav class="fixed">
-    <ul class="fixed__list">
-      <li class="fixed__item fixed__item_active">
-        <a class="fixed__link"></a>
-      </li>
-      <li class="fixed__item">
-        <a class="fixed__link"></a>
-      </li>
-      <li class="fixed__item">
-        <a class="fixed__link"></a>
-      </li>
-      <li class="fixed__item">
-        <a class="fixed__link"></a>
-      </li>
-      <li class="fixed__item">
-        <a class="fixed__link"></a>
-      </li>
-      <li class="fixed__item">
-        <a class="fixed__link"></a>
-      </li>
-      <li class="fixed__item">
-        <a class="fixed__link"></a>
-      </li>
-      <li class="fixed__item">
-        <a class="fixed__link"></a>
-      </li>
-      <li class="fixed__item">
-        <a class="fixed__link"></a>
-      </li>
-    </ul>
-  </nav>
-  <div class="section section_type_contacts">
-    <div class="map">
-      <img src="./img/map.png">
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__col">
-            <adress class="contacts">
-              <span>Москва, ул.Новый Арбат, д.31/12</span>
-              <div class="contacts__tel">
-                <svg class="phone-icon">
-                  <use xlink:href="./sprite.svg#phone"></use>
-                </svg>
-                <a href="tel:+78009039090" class="contacts-phone">8 800 903 90 90</a>
-              </div>
-            </adress>
-          </div>
-          <div class="footer__col">
-            <ul class="socials">
-              <li class="socials__icon socials__icon_vk">
-                <a class="socials__link" href="#">
-                  <svg class="vk">
-                    <use xlink:href="./sprite.svg#vk"></use>
+    <div class="section section_type_contacts">
+      <div class="map">
+        <img src="./img/map.png">
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__col">
+              <adress class="contacts">
+                <span>Москва, ул.Новый Арбат, д.31/12</span>
+                <div class="contacts__tel">
+                  <svg class="phone-icon">
+                    <use xlink:href="./sprite.svg#phone"></use>
                   </svg>
-                </a>
-              </li>
-              <li class="socials__icon socials__icon_fb">
-                <a class="socials__link" href="#">
-                  <svg class="fb">
-                    <use xlink:href="./sprite.svg#fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__icon socials__icon_inst">
-                <a class="socials__link" href="#">
-                  <svg class="inst">
-                    <use xlink:href="./sprite.svg#inst"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__icon socials__icon_telegram">
-                <a class="socials__link" href="#">
-                  <svg class="telegram">
-                    <use xlink:href="./sprite.svg#telegram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+                  <a href="tel:+78009039090" class="contacts-phone">8 800 903 90 90</a>
+                </div>
+              </adress>
+            </div>
+            <div class="footer__col">
+              <ul class="socials">
+                <li class="socials__icon socials__icon_vk">
+                  <a class="socials__link" href="#">
+                    <svg class="vk">
+                      <use xlink:href="./sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__icon socials__icon_fb">
+                  <a class="socials__link" href="#">
+                    <svg class="fb">
+                      <use xlink:href="./sprite.svg#fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__icon socials__icon_inst">
+                  <a class="socials__link" href="#">
+                    <svg class="inst">
+                      <use xlink:href="./sprite.svg#inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__icon socials__icon_telegram">
+                  <a class="socials__link" href="#">
+                    <svg class="telegram">
+                      <use xlink:href="./sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+
+    <nav class="fixed">
+      <ul class="fixed__list">
+        <li class="fixed__item fixed__item_active">
+          <a class="fixed__link"></a>
+        </li>
+        <li class="fixed__item">
+          <a class="fixed__link"></a>
+        </li>
+        <li class="fixed__item">
+          <a class="fixed__link"></a>
+        </li>
+        <li class="fixed__item">
+          <a class="fixed__link"></a>
+        </li>
+        <li class="fixed__item">
+          <a class="fixed__link"></a>
+        </li>
+        <li class="fixed__item">
+          <a class="fixed__link"></a>
+        </li>
+        <li class="fixed__item">
+          <a class="fixed__link"></a>
+        </li>
+        <li class="fixed__item">
+          <a class="fixed__link"></a>
+        </li>
+        <li class="fixed__item">
+          <a class="fixed__link"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </div>
-  <script src="main.js"></script>
 </body>
 
 </html>

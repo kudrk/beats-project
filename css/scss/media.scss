@@ -55,10 +55,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 0;
+    padding-top: 0;
 
     &::before {
       content: url(../../img/headphones_mini.png);
-      margin-bottom: 2.5rem;
+      margin-bottom: 0.5rem;
     }
   }
 }
@@ -111,11 +113,11 @@
 
 .section-slider__pic {
   @include tablets {
-    margin: 0 0 10%;
+    margin: 0 0 5%;
     display: flex;
     flex: 1;
     justify-content: center;
-    max-width: 50%;
+    max-width: 40%;
   }
 }
 
@@ -161,6 +163,46 @@
   }
 }
 
+.arrow {
+  @include tablets {
+    top: 33%;
+  }
+}
+
+.container__crew {
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+
+.crew-section__list {
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.crew-section__img {
+  @include tablets {
+    display: none;
+  }
+}
+
+.crew-section__item {
+  @include tablets {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 .review {
@@ -194,7 +236,7 @@
 
 .section {
   @include tablets {
-    min-height: 62.5rem;
+    min-height: inherit;
   }
 }
 
@@ -208,7 +250,7 @@
   @include tablets {
     display: flex;
     flex-direction: column;
-    padding: 4% 15%;
+    padding: 0;
   }
 }
 
@@ -216,6 +258,12 @@
   @include tablets {
     display: flex;
     justify-content: center;
+  }
+}
+
+.form__input_textarea {
+  @include phones {
+    min-height: 1.625rem;
   }
 }
 
@@ -289,7 +337,7 @@
 
 .form {
   @include phones {
-    padding: 7% 0;
+    padding: 3.5% 0;
 
     &__col {
       @include phones {
@@ -309,6 +357,7 @@
     @include mini {
       display: flex;
       font-size: small;
+      margin-bottom: 3%;
     }
   }
 }
@@ -317,6 +366,7 @@
   @include phones {
     display: flex;
     justify-content: center;
+    margin: 0 0 3%;
   }
 
   @include mini {
@@ -326,7 +376,7 @@
 
 .form__row {
   @include phones {
-    margin-bottom: 2.125rem;
+    margin-bottom: 0.125rem;
   }
 }
 
