@@ -17,6 +17,10 @@
     box-shadow: none;
     border: none;
     background: none;
+
+    img {
+      width: 31rem;
+    }
   }
 
   &__description {
@@ -41,6 +45,8 @@
 
   &__pic {
     margin-right: 3.6875rem;
+    flex-shrink: 1;
+    max-width: 50%;
   }
 
   .inner-title {

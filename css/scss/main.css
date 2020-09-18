@@ -911,6 +911,8 @@ button {
     box-shadow: none;
     border: none;
     background: none; }
+    .section-slider .bx-wrapper img {
+      width: 31rem; }
   .section-slider__description {
     max-width: 50%;
     display: flex;
@@ -928,7 +930,9 @@ button {
     margin-bottom: 1.5625rem;
     position: relative; }
   .section-slider__pic {
-    margin-right: 3.6875rem; }
+    margin-right: 3.6875rem;
+    flex-shrink: 1;
+    max-width: 50%; }
   .section-slider .inner-title {
     font-size: 2.25rem;
     line-height: 2.625rem;
