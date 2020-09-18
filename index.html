@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Beats</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link href="./css/scss/main.css" rel="stylesheet">
 </head>
 
@@ -143,11 +144,11 @@
     <div class="section section-slider">
       <div class="triangle"></div>
       <div class="container container_type_slider">
-        <div class="arrow arrow_type_left">
+        <a class="arrow arrow_type_left">
           <svg class="arrow-icon">
             <use xlink:href="./sprite.svg#arrow-left"></use>
           </svg>
-        </div>
+        </a>
         <div class="slider">
           <ul class="section-slider__list">
             <li class="section-slider__inner">
@@ -195,13 +196,55 @@
                 </div>
               </div>
             </li>
+            <li class="section-slider__inner">
+              <div class="section-slider__pic">
+                <img class="section-slider__img" src="./img/redbeats.png">
+              </div>
+              <div class="section-slider__description">
+                <div class="section-slider__logo">
+                  <div class="section-slider__box">
+                    <svg class="gear">
+                      <use xlink:href="./sprite.svg#gear"></use>
+                    </svg>
+                    <div class="dropdown__info">
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item"><img src="./img/icons/bluetooth.svg">Bluetooth <span>4.0</span> </li>
+                        <li class="dropdown__item"><img src="./img/icons/road.svg">Дальность <span>10м</span></li>
+                        <li class="dropdown__item"><img src="./img/icons/charger.svg">Зарядка <span>2ч</span></li>
+                        <li class="dropdown__item"><img src="./img/icons/kg.svg">Вес <span>215гр</span></li>
+                        <li class="dropdown__item"><img src="./img/icons/patent.svg">Гарантия <span>1год</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="inner-title">beats solo pro. цвет «красный цитрус»</h2>
+                <div class="section-slider__about">
+                  <p class="description description_theme_light">
+                    Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два
+                    режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.
+                  </p>
+                  <div class="technical">
+                    <div class="technical__charging">
+                      Зарядка <span class="technical__bold">2&nbsp;часа</span>
+                    </div>
+                    <div class="technical__weight">
+                      Вес <span class="technical__bold">215&nbsp;грамм</span>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <span class="price__rub">14 990 ₽</span>
+                    <a class="button button_type_order" href="#">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="arrow arrow_type_right">
+        <a class="arrow arrow_type_right">
           <svg class="arrow-icon">
             <use xlink:href="./sprite.svg#arrow-right"></use>
           </svg>
-        </div>
+        </a>
       </div>
       <div class="square"></div>
     </div>
@@ -210,92 +253,162 @@
         <div class="title-block">
           <h2 class="inner-title">Команда</h2>
         </div>
-        <div class="crew-section__crew">
-          <ul class="crew-section__list">
-            <li class="crew-section__item">
-              <div class="crew-section__img">
+
+        <ul class="crew-section__list">
+          <li class="crew-section__item">
+            <div class="crew-section__img">
+              <img class="crew-section__pic" src="./img/1.png">
+            </div>
+            <span class="name">Борис Федорович</span>
+            <div class="more"></div>
+            <div class="mini-drop">
+              <span class="prof">Главный технолог</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
+            </div>
+          </li>
+          <li class="crew-section__item">
+            <div class="crew-section__img">
+              <img class="crew-section__pic" src="./img/2.png">
+            </div>
+            <span class="name">Алла Иванова</span>
+            <div class="more"></div>
+            <div class="mini-drop">
+              <span class="prof">Специалист</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            </div>
+          </li>
+          <li class="crew-section__item">
+            <div class="crew-section__img">
+              <img class="crew-section__pic" src="./img/3.png">
+            </div>
+            <span class="name">Кирилл Матросов</span>
+            <div class="more"></div>
+            <div class="mini-drop">
+              <span class="prof">Оператор</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </li>
+          <li class="crew-section__item">
+            <div class="crew-section__img">
+              <img class="crew-section__pic" src="./img/4.png">
+            </div>
+            <span class="name">Мила Рыжкова</span>
+            <div class="more"></div>
+            <div class="mini-drop">
+              <span class="prof">PR, маркетинг</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="crew-section__mini-list">
+          <li class="crew-section__item">
+            <span class="name">Борис Федорович</span>
+            <div class="more"></div>
+            <div class="mini-drop">
+              <div class="mini-drop__img">
                 <img class="crew-section__pic" src="./img/1.png">
               </div>
-              <span class="name">Борис Федорович</span>
-              <div class="more"></div>
-              <div class="mini-drop">
-                <span class="prof">Главный технолог</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime fugit recusandae beatae
-                  sint facere, optio totam velit. At quisquam atque iure non cum accusamus praesentium minima iusto ut
-                  quae.</p>
-              </div>
-            </li>
-            <li class="crew-section__item">
-              <div class="crew-section__img">
+              <span class="prof">Главный технолог</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          </li>
+          <li class="crew-section__item">
+            <span class="name">Алла Иванова</span>
+            <div class="more"></div>
+            <div class="mini-drop">
+              <div class="mini-drop__img">
                 <img class="crew-section__pic" src="./img/2.png">
               </div>
-              <span class="name">Алла Иванова</span>
-              <div class="more"></div>
-              <div class="mini-drop">
-                <span class="prof">Специалист</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime fugit recusandae beatae
-                  sint facere, optio totam velit. At quisquam atque iure non cum accusamus praesentium minima iusto ut
-                  quae.</p>
-              </div>
-            </li>
-            <li class="crew-section__item">
-              <div class="crew-section__img">
+              <span class="prof">Специалист</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          </li>
+          <li class="crew-section__item">
+            <span class="name">Кирилл Матросов</span>
+            <div class="more"></div>
+            <div class="mini-drop">
+              <div class="mini-drop__img">
                 <img class="crew-section__pic" src="./img/3.png">
               </div>
-              <span class="name">Кирилл Матросов</span>
-              <div class="more"></div>
-              <div class="mini-drop">
-                <span class="prof">Оператор</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime fugit recusandae beatae
-                  sint facere, optio totam velit. At quisquam atque iure non cum accusamus praesentium minima iusto ut
-                  quae.</p>
-              </div>
-            </li>
-            <li class="crew-section__item">
-              <div class="crew-section__img">
+              <span class="prof">Оператор</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          </li>
+          <li class="crew-section__item">
+            <span class="name">Мила Рыжкова</span>
+            <div class="more"></div>
+            <div class="mini-drop">
+              <div class="mini-drop__img">
                 <img class="crew-section__pic" src="./img/4.png">
               </div>
-              <span class="name">Мила Рыжкова</span>
-              <div class="more"></div>
-              <div class="mini-drop">
-                <span class="prof">PR, маркетинг</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maxime fugit recusandae beatae
-                  sint facere, optio totam velit. At quisquam atque iure non cum accusamus praesentium minima iusto ut
-                  quae.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-
+              <span class="prof">PR, маркетинг</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="section section_color_white review-section">
       <div class="container">
         <h2 class="inner-title">Отзывы</h2>
-        <div class="review">
-          <div class="review__img">
-            <img class="review__pic" src="./img/billie.jpg">
-          </div>
-          <div class="review__comment">
-            <h3 class="inner-title inner-title_mini">Отличный звук</h3>
-            <p class="description description_theme_light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Incidunt dolor labore temporibus tenetur nesciunt fugit culpa omnis veritatis accusantium facere,
-              molestias porro eveniet aliquam eos, quia laborum commodi repellat rem!</p>
-            <span class="name">Билли Айлиш</span>
-          </div>
-        </div>
+        <ul class="reviews">
+          <li class="rev active" data-slide="first">
+            <div class="review">
+              <div class="review__img">
+                <img class="review__pic" src="./img/billie.jpg">
+              </div>
+              <div class="review__comment">
+                <h3 class="inner-title inner-title_mini">Отличный звук</h3>
+                <p class="description description_theme_light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt dolor labore temporibus tenetur nesciunt fugit culpa omnis veritatis accusantium facere,
+                  molestias porro eveniet aliquam eos, quia laborum commodi repellat rem!</p>
+                <span class="name">Билли Айлиш</span>
+              </div>
+            </div>
+          </li>
+          <li class="rev" data-slide="second">
+            <div class="review">
+              <div class="review__img">
+                <img class="review__pic" src="./img/boy.jpg">
+              </div>
+              <div class="review__comment">
+                <h3 class="inner-title inner-title_mini">Крутой дизайн</h3>
+                <p class="description description_theme_light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt dolor labore temporibus tenetur nesciunt fugit culpa omnis veritatis accusantium facere,
+                  molestias porro eveniet aliquam eos, quia laborum commodi repellat rem!</p>
+                <span class="name">Вадим Грачев</span>
+              </div>
+            </div>
+          </li>
+          <li class="rev" data-slide="third">
+            <div class="review">
+              <div class="review__img">
+                <img class="review__pic" src="./img/girl.jpg">
+              </div>
+              <div class="review__comment">
+                <h3 class="inner-title inner-title_mini">На долго хватает заряда</h3>
+                <p class="description description_theme_light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt dolor labore temporibus tenetur nesciunt fugit culpa omnis veritatis accusantium facere,
+                  molestias porro eveniet aliquam eos, quia laborum commodi repellat rem!</p>
+                <span class="name">Мария Орлова</span>
+              </div>
+            </div>
+          </li>
+        </ul>
         <ul class="photo-gallery">
-          <li class="photo-gallery__item">
-            <a class="photo-gallery__link photo-gallery__link_active"><img class="photo-gallery__pic"
-                src="./img/billie.jpg"></a>
+          <li class="photo-gallery__item active">
+            <a class="photo-gallery__link" data-open="first"><img class="photo-gallery__pic" src="./img/billie.jpg"></a>
           </li>
           <li class="photo-gallery__item">
-            <a class="photo-gallery__link"><img class="photo-gallery__pic" src="./img/boy.jpg"></a>
+            <a class="photo-gallery__link" data-open="second"><img class="photo-gallery__pic" src="./img/boy.jpg"></a>
           </li>
           <li class="photo-gallery__item">
-            <a class="photo-gallery__link"><img class="photo-gallery__pic" src="./img/girl.jpg"></a>
+            <a class="photo-gallery__link" data-open="third"><img class="photo-gallery__pic" src="./img/girl.jpg"></a>
           </li>
         </ul>
       </div>
@@ -361,7 +474,7 @@
             <div class="form__row">
               <div class="form__group form__group_checkbox">
                 <input class="radio" type="checkbox" id="radio3">
-                <div class="form__visible"></div>
+                <div class="form__visible form__visible_check"></div>
                 <label for="radio3" class="form__label">Не перезванивать</label>
               </div>
             </div>
@@ -460,10 +573,11 @@
         </li>
       </ul>
     </nav>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="main.js"></script>
   </div>
 </body>

@@ -1,6 +1,6 @@
 .section_type_form {
   position: relative;
-  }
+}
 
 .pentagon {
   position: absolute;
@@ -106,6 +106,10 @@
     margin-right: 0.625rem;
     flex-shrink: 0;
     cursor: auto;
+
+    &_check {
+      border-radius: 0;
+    }
 
     &::before {
       content: "";

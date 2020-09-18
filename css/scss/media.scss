@@ -101,7 +101,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 2%;
   }
 }
 
@@ -165,7 +164,7 @@
 
 .arrow {
   @include tablets {
-    top: 33%;
+    top: 25%;
   }
 }
 
@@ -178,16 +177,15 @@
 
 .crew-section__list {
   @include tablets {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.crew-section__img {
-  @include tablets {
     display: none;
   }
 }
+
+// .crew-section__img {
+//   @include tablets {
+
+//   }
+// }
 
 .crew-section__item {
   @include tablets {
@@ -195,6 +193,18 @@
   }
 }
 
+.crew-section__mini-list .mini-drop {
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.crew-section__mini-list {
+  @include tablets {
+    display: flex;
+  }
+}
 
 
 

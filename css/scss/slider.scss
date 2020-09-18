@@ -8,10 +8,15 @@
 
   &__inner {
     display: flex;
-    padding: 0 2%;
     align-items: center;
     flex-shrink: 0;
     width: 100%;
+  }
+
+  .bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: none;
   }
 
   &__description {
@@ -70,13 +75,14 @@
   top: 50%;
   transform: translateY(-50%);
   flex: 0;
+  cursor: pointer;
 
   &_type_left {
-    left: 14%;
+    left: 9%;
   }
 
   &_type_right {
-    right: 14%;
+    right: 9%;
   }
 }
 

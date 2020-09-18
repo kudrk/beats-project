@@ -7,6 +7,8 @@
 
 .fixed__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .fixed__item {
@@ -44,4 +46,3 @@
     transform: translate(-50%, -50%);
   }
 }
-
