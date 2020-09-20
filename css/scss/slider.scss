@@ -1,0 +1,154 @@
+.section-slider {
+  padding-top: 4%;
+  position: relative;
+
+  &__logo {
+    position: relative;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: none;
+
+    img {
+      max-height: 100%;
+    }
+
+  }
+
+  &__description {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__box {
+    width: 5.6875rem;
+    height: 5.6875rem;
+    border-radius: 4px;
+    background: #9A9A9A;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5625rem;
+    position: relative;
+  }
+
+  &__pic {
+    margin-right: 3.6875rem;
+    flex-shrink: 1;
+    max-width: 45%;
+  }
+
+  .inner-title {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    text-align: start;
+  }
+
+  .description_theme_light {
+    text-align: inherit;
+    margin-bottom: 30px;
+  }
+}
+
+.container_type_slider {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section-slider__list {
+  padding: 0;
+  margin: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  flex: 0;
+  cursor: pointer;
+
+  &_type_left {
+    left: 9%;
+  }
+
+  &_type_right {
+    right: 9%;
+  }
+}
+
+.arrow-icon {
+  width: 13.5px;
+  height: 27px;
+}
+
+.gear {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fff;
+}
+
+.technical {
+  display: flex;
+  color: #666666;
+  margin-bottom: 1.5625rem;
+
+  &__charging,
+  &__weight {
+    max-width: 3.875rem;
+    margin-right: 5rem;
+  }
+
+  &__bold {
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: flex-start;
+
+  &__rub {
+    font-size: 2.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0px;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+  border-top: 2.25rem solid #E01F3D;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -1%;
+  left: 19%;
+}
+
+.square {
+  width: 24px;
+  height: 24px;
+  background: #292929;
+  transform: rotate(30deg);
+  position: absolute;
+  bottom: -10px;
+  right: 15%;
+}

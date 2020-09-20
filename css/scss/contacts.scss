@@ -1,0 +1,19 @@
+.section_type_contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
