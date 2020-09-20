@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Beats</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link href="./css/scss/main.css" rel="stylesheet">
 </head>
 
@@ -417,26 +418,27 @@
       <div class="container">
         <div class="pentagon"><img src="./img/icons/pentagon.png"></div>
         <h2 class="inner-title">Закажите доставку</h2>
-        <form class="form">
+        <form class="form" id="mainForm">
+          <input type="hidden" name="to" value="smth@mail.com">
           <div class="form__col">
             <div class="form__row">
               <div class="form__group">
                 <label class="form__label">Имя</label>
-                <input class="form__input" type="text">
+                <input class="form__input" name="name" type="text">
               </div>
               <div class="form__group">
                 <label class="form__label">Телефон</label>
-                <input class="form__input" type="text">
+                <input class="form__input" name="phone" type="text">
               </div>
             </div>
             <div class="form__row form__row_single">
               <label class="form__label">Улица</label>
-              <input class="form__input" type="text">
+              <input class="form__input" type="text" name="street">
             </div>
             <div class="form__row">
               <div class="form__group">
                 <label class="form__label">Дом</label>
-                <input class="form__input" type="text">
+                <input class="form__input" type="text" name="building">
               </div>
               <div class="form__group">
                 <label class="form__label">Корпус</label>
@@ -455,7 +457,7 @@
           <div class="form__col">
             <div class="form__group form__group_right">
               <label class="form__label">Комментарий</label>
-              <textarea class="form__input form__input_textarea" type="text"></textarea>
+              <textarea class="form__input form__input_textarea" type="text" name="comment"></textarea>
             </div>
             <div class="cntrls">
               <div class="form__row">
@@ -480,7 +482,7 @@
             </div>
 
             <div class="form__buttons">
-              <button type="submit" class="button button_type_order">Заказать</button>
+              <button id="send" type="submit" class="button button_type_order">Заказать</button>
               <button type="reset" class="button button_type_reset">Очистить</button>
             </div>
           </div>
@@ -541,7 +543,14 @@
         </div>
       </footer>
     </div>
-
+    <div id="modal" class="modal">
+      <div class="modal__container">
+        <div class="modal__content">Сообщение отправлено</div>
+        <div class="modal__btn-container">
+          <a href="#" class="button button_type_order close-modal">Закрыть</a>
+        </div>
+      </div>
+    </div>
     <nav class="fixed">
       <ul class="fixed__list">
         <li class="fixed__item fixed__item_active">
@@ -576,8 +585,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="main.js"></script>
   </div>
 </body>
