@@ -1,0 +1,81 @@
+.colors-section {
+  color: #fff;
+  position: relative;
+  background: url(../../img/lavabeats.jpg) right center no-repeat;
+  padding: 0;
+
+  .title-block {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+
+  &__description {
+    font-family: $fontsecond;
+    width: 0;
+    transition: width .4s;
+    background: rgba(51, 53, 55, 0.9);
+    overflow: hidden;
+
+    p {
+      margin: 10%;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    // left: 0;
+    // justify-content: flex-end;
+    // z-index: 1;
+  }
+
+  &__item {
+    display: flex;
+    // flex-shrink: 0;
+    // width: 100%;
+    // order: 1;
+
+    &_active .colors-section__description {
+      width: 32.75rem;
+      transition: width .4s;
+    }
+  }
+
+  &__trigger {
+    text-decoration: none;
+    color: inherit;
+    width: 102px;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2.125rem;
+
+
+    &_color-grey {
+      background-color: #999;
+    }
+
+    &_color-black {
+      background-color: #151515;
+    }
+
+    &_color-red {
+      background-color: #E01F3C;
+    }
+  }
+}
+
+.colors-section__tipe-title {
+  font-family: $fontsecond;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin: 0;
+  white-space: nowrap;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+}

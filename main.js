@@ -137,7 +137,7 @@ $('.form').submit(e => {
         const message = data.responseJSON.message;
         content.text(message);
         modal.addClass("error-modal");
-        
+
         $.fancybox.open({
           src: "#modal",
           type: "inline",
@@ -152,3 +152,28 @@ $(".close-modal").click(e => {
 
   $.fancybox.close();
 })
+
+
+
+
+//colors
+
+// const color = $(.colors - section__item_active);
+// const desc = $(.colors - section__description);
+
+// $('.colors-section__item').click(e => {
+//   e.preventDefault();
+//   if (color.hasClass('colors-section__item_active')) {
+//     $(desc).css({
+//       'width': '32.75rem'
+//     });
+//     $(e.currentTarget).removeClass('colors-section__item_active');
+//   } else {
+//     $(e.currentTarget).css({
+//       'width': '0rem'
+//     });
+//     $(e.currentTarget).addClass('colors-section__item_active');
+//   }
+// });
+
+
