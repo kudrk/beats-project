@@ -1133,7 +1133,7 @@ button {
     left: 10%; }
   .colors-section__description {
     font-family: "Alegreya Sans", Georgia, sans-serif;
-    width: 0;
+    width: 0rem;
     transition: width .4s;
     background: rgba(51, 53, 55, 0.9);
     overflow: hidden; }
@@ -1305,6 +1305,11 @@ button {
 @media screen and (max-width: 768px) {
   .crew-section__mini-list {
     display: flex; } }
+
+@media screen and (max-width: 768px) {
+  .colors-section__item_active .colors-section__description {
+    width: 100%;
+    transition: width .4s; } }
 
 @media screen and (max-width: 768px) {
   .review {
