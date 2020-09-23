@@ -12,6 +12,7 @@ $textcolor:#292929;
 $btncolor:#FFFFFF;
 
 //breakpoints
+$laptops:1024px;
 $tablets:768px;
 $phones:480px;
 $mini:350px;
@@ -21,7 +22,7 @@ html {
   font-size: 16px;
 }
 
-.no-scroll{
+.no-scroll {
   overflow: hidden;
 }
 
@@ -56,7 +57,7 @@ body {
   line-height: 1.42;
   margin: 0px;
   height: 100vh;
-  
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -87,7 +88,7 @@ body {
   margin: 0 auto;
   width: 95%;
   max-width: 940px;
-  
+
   &__main {
     display: flex;
     flex-direction: column;

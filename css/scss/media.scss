@@ -1,3 +1,9 @@
+@mixin laptops {
+  @media screen and (max-width: $laptops) {
+    @content;
+  }
+}
+
 @mixin tablets {
   @media screen and (max-width: $tablets) {
     @content;
@@ -116,7 +122,7 @@
     display: flex;
     flex: 1;
     justify-content: center;
-    max-width: 40%;
+    // max-width: 40%;
   }
 }
 
@@ -163,8 +169,28 @@
 }
 
 .arrow {
+  @include laptops {
+    display: none;
+  }
+}
+
+.arrow {
   @include tablets {
+    display: block;
+    top: 35%;
+  }
+}
+
+.arrow {
+  @include phones {
+    display: block;
     top: 25%;
+  }
+}
+.arrow {
+  @include mini {
+    display: block;
+    top: 23%;
   }
 }
 
