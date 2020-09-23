@@ -187,6 +187,7 @@
     top: 25%;
   }
 }
+
 .arrow {
   @include mini {
     display: block;
@@ -232,26 +233,14 @@
   }
 }
 
-.colors-section__list {
-  @include tablets {
-
-    // right: 0;
-    // justify-content: flex-end;
-    // z-index: 1;
-  }
-}
 
 .colors-section__item_active .colors-section__description {
   @include tablets {
+    // flex-shrink: 0;
     width: 100%;
     transition: width .4s;
   }
 }
-
-
-
-
-
 
 
 

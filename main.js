@@ -19,22 +19,23 @@ document.getElementById('menu__croce').addEventListener('click', function () {
 })
 
 
-// drop
+// drop !!!!!!!!!!!!
 
 $(document).ready(() => {
-  $('.more').on('click', e => {
-    let drop = $(e.currentTarget).next();
+  $('.name').on('click', e => {
+    let drop = $(e.currentTarget).nextAll('.mini-drop');
     drop.slideToggle();
 
-    const more = $('.more');
+    const name = $('.name');
+    const more = $(e.currentTarget).next('.more');
 
-    if (more.hasClass('active')) {
-      $(e.currentTarget).css({
+    if (name.hasClass('active')) {
+      $(more).css({
         'transform': 'rotate(0deg)'
       });
       $(e.currentTarget).removeClass('active');
     } else {
-      $(e.currentTarget).css({
+      $(more).css({
         'transform': 'rotate(180deg)'
       });
       $(e.currentTarget).addClass('active');

@@ -1046,14 +1046,16 @@ button {
 .container__crew .title-block {
   margin-bottom: 50px; }
 
+.name {
+  cursor: pointer; }
+
 .more {
   display: inline-block;
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 12px solid #E01F3D;
-  cursor: pointer; }
+  border-top: 12px solid #E01F3D; }
 
 .crew-section__list {
   display: flex;
@@ -1136,7 +1138,6 @@ button {
   .colors-section__description {
     font-family: "Alegreya Sans", Georgia, sans-serif;
     width: 0rem;
-    transition: width .4s;
     background: rgba(51, 53, 55, 0.9);
     overflow: hidden; }
     .colors-section__description p {
@@ -1157,7 +1158,7 @@ button {
   .colors-section__trigger {
     text-decoration: none;
     color: inherit;
-    width: 102px;
+    width: 6.375rem;
     display: flex;
     justify-content: center;
     padding: 0 0 2.125rem; }
