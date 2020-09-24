@@ -2,6 +2,7 @@
   color: #fff;
   position: relative;
   background: url(../../img/lavabeats.jpg) right center no-repeat;
+  background-size: cover;
   padding: 0;
 
   .title-block {
@@ -13,7 +14,7 @@
   &__description {
     font-family: $fontsecond;
     width: 0rem;
-    // transition: width .4s;
+    transition: width .2s;
     background: rgba(51, 53, 55, 0.9);
     overflow: hidden;
 
@@ -38,7 +39,7 @@
 
     &_active .colors-section__description {
       width: 32.75rem;
-      transition: width .4s;
+      transition: width .2s;
     }
   }
 

@@ -546,18 +546,20 @@ button {
   padding: 4% 0; }
   .text-block__img {
     width: 128px;
+    height: 128px;
     background-color: #F2F5F4;
     border-radius: 50%;
-    padding: 10%; }
+    padding: 30px;
+    flex-shrink: 0; }
     .text-block__img .battery {
       width: 65px;
       height: 65px; }
     .text-block__img .sound {
-      width: 59px;
-      height: 54px; }
+      width: 65px;
+      height: 65px; }
     .text-block__img .time {
-      width: 77px;
-      height: 71px; }
+      width: 65px;
+      height: 65px; }
   .text-block__list {
     display: flex;
     padding: 0;
@@ -1074,12 +1076,23 @@ button {
   margin: 0;
   list-style: none;
   justify-content: space-between; }
-  .crew-section__mini-list .mini-drop {
-    display: none; }
 
 .crew-section__item {
   flex: 0;
   text-align: center; }
+
+.mini-drop {
+  height: 0;
+  overflow: hidden;
+  transition: height .4s; }
+
+.crew-section__item_active .mini-drop {
+  height: 95px;
+  transition: height .4s; }
+
+.crew-section__item_active .more {
+  transform: rotate(180deg);
+  transition: rotate .4s; }
 
 .crew-section__img {
   width: 13.75rem;
@@ -1099,12 +1112,6 @@ button {
 
 .prof {
   display: block; }
-
-.mini-drop {
-  display: none; }
-  .mini-drop p {
-    margin: 0;
-    color: #666666; }
 
 .modal {
   font-family: "Play", Georgia, sans-serif;
@@ -1130,6 +1137,7 @@ button {
   color: #fff;
   position: relative;
   background: url(../../img/lavabeats.jpg) right center no-repeat;
+  background-size: cover;
   padding: 0; }
   .colors-section .title-block {
     position: absolute;
@@ -1138,6 +1146,7 @@ button {
   .colors-section__description {
     font-family: "Alegreya Sans", Georgia, sans-serif;
     width: 0rem;
+    transition: width .2s;
     background: rgba(51, 53, 55, 0.9);
     overflow: hidden; }
     .colors-section__description p {
@@ -1154,7 +1163,7 @@ button {
     display: flex; }
     .colors-section__item_active .colors-section__description {
       width: 32.75rem;
-      transition: width .4s; }
+      transition: width .2s; }
   .colors-section__trigger {
     text-decoration: none;
     color: inherit;
@@ -1177,6 +1186,113 @@ button {
   white-space: nowrap;
   writing-mode: tb-rl;
   transform: rotate(180deg); }
+
+.player-section {
+  position: relative; }
+  .player-section__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+  .player-section .inner-title {
+    margin-bottom: 2.75rem; }
+
+.player-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -17px;
+  left: 80px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #868686; }
+
+.player {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 41.25rem;
+  height: 24.375rem; }
+  .player__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
+  .player .player__video {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%; }
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background: #3e3e3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5625rem; }
+  .player__controls button:focus {
+    outline: none; }
+
+.player__splash {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: url(../../img/splash.png) center center no-repeat;
+  cursor: pointer; }
+
+.player__start {
+  background: url(../../img/splash.png) center center no-repeat;
+  display: block;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-size: contain; }
+
+.paused .player__start {
+  background: url(../../img/icons/pause.png) center center no-repeat;
+  display: block;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  background-size: contain; }
+
+.player__playback {
+  height: 0.25rem;
+  border-radius: 1px;
+  background-color: #fff;
+  outline: none;
+  width: 27.875rem;
+  appearance: none; }
+
+.player__sound::-webkit-slider-thumb,
+.player__playback::-webkit-slider-thumb {
+  appearance: none;
+  background: #fff;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: none;
+  border-radius: 50%; }
+
+.player__sound {
+  height: 0.25rem;
+  border-radius: 1px;
+  background-color: #fff;
+  outline: none;
+  width: 6.25rem;
+  appearance: none; }
+
+.mute {
+  background: url(../../img/icons/mute.png) center center no-repeat;
+  display: block;
+  width: 0.5625rem;
+  height: 1.5625rem;
+  background-size: contain; }
 
 @media screen and (max-width: 768px) {
   .fixed {
@@ -1311,6 +1427,11 @@ button {
     display: none; } }
 
 @media screen and (max-width: 768px) {
+  .crew-section__item_active .mini-drop {
+    height: 330px;
+    transition: height .4s; } }
+
+@media screen and (max-width: 768px) {
   .crew-section__item {
     margin-bottom: 15px; } }
 
@@ -1325,8 +1446,20 @@ button {
 
 @media screen and (max-width: 768px) {
   .colors-section__item_active .colors-section__description {
+    flex-shrink: 0;
     width: 100%;
-    transition: width .4s; } }
+    transition: width .2s; } }
+
+@media screen and (max-width: 1024px) {
+  .colors-section .title-block {
+    position: absolute;
+    top: 10%;
+    left: 3%; } }
+
+@media screen and (max-width: 768px) {
+  .colors-section__trigger {
+    width: 4.375rem;
+    flex-shrink: 0; } }
 
 @media screen and (max-width: 768px) {
   .review {
@@ -1386,10 +1519,24 @@ button {
     margin-bottom: 1.5625rem; } }
 
 @media screen and (max-width: 480px) {
+  .text-block__img {
+    width: 100px;
+    height: 100px;
+    padding: 25px; } }
+
+@media screen and (max-width: 480px) {
   .text-block .text-block__img {
-    padding: 5.5%;
     margin-right: 1.125rem;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+    .text-block .text-block__img .battery {
+      width: 50px;
+      height: 50px; }
+    .text-block .text-block__img .sound {
+      width: 50px;
+      height: 50px; }
+    .text-block .text-block__img .time {
+      width: 50px;
+      height: 50px; } }
 
 @media screen and (max-width: 480px) {
   .text-block__desc {
@@ -1418,6 +1565,23 @@ button {
 @media screen and (max-width: 480px) {
   .pentagon {
     right: 2.125rem; } }
+
+@media screen and (max-width: 480px) {
+  .player__elem {
+    width: 290px;
+    height: 200px; } }
+
+@media screen and (max-width: 480px) {
+  .player__start {
+    margin-right: 7px; } }
+
+@media screen and (max-width: 480px) {
+  .player__playback {
+    margin-right: 7px; } }
+
+@media screen and (max-width: 480px) {
+  .player__duration {
+    font-size: 0.75rem; } }
 
 @media screen and (max-width: 480px) {
   .form {

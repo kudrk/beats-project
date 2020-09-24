@@ -36,9 +36,11 @@
 
   &__img {
     width: 128px;
+    height: 128px;
     background-color: #F2F5F4;
     border-radius: 50%;
-    padding: 10%;
+    padding: 30px;
+    flex-shrink: 0;
 
     .battery {
       width: 65px;
@@ -46,13 +48,13 @@
     }
 
     .sound {
-      width: 59px;
-      height: 54px;
+      width: 65px;
+      height: 65px;
     }
 
     .time {
-      width: 77px;
-      height: 71px;
+      width: 65px;
+      height: 65px;
     }
   }
 

@@ -19,26 +19,39 @@ document.getElementById('menu__croce').addEventListener('click', function () {
 })
 
 
-// drop !!!!!!!!!!!!
+// drop первый вариант
+
+// $(document).ready(() => {
+//   $('.name').on('click', e => {
+//     const drop = $(e.currentTarget).nextAll('.mini-drop');
+//     const curElement = $(e.currentTarget).closest('.crew-section__item');
+//     const activeElement = $('.crew-section__item.active');
+//     const dropActive = activeElement.find('.mini-drop');
+
+//     if (activeElement.length > 0) {
+//       activeElement.removeClass('active');
+//       dropActive.slideToggle();
+//     }
+//     if (!activeElement.length > 0 || activeElement.find('.name') !== $(e.currentTarget)) {
+//       curElement.addClass('active');
+//       drop.slideToggle();
+//     }
+//   })
+// });
+
+
+//drop новый вариант
 
 $(document).ready(() => {
+
   $('.name').on('click', e => {
-    let drop = $(e.currentTarget).nextAll('.mini-drop');
-    drop.slideToggle();
 
-    const name = $('.name');
-    const more = $(e.currentTarget).next('.more');
+    $(e.currentTarget).closest('.crew-section__item').toggleClass('crew-section__item_active');
 
-    if (name.hasClass('active')) {
-      $(more).css({
-        'transform': 'rotate(0deg)'
-      });
-      $(e.currentTarget).removeClass('active');
-    } else {
-      $(more).css({
-        'transform': 'rotate(180deg)'
-      });
-      $(e.currentTarget).addClass('active');
+    const activeCrew = $('.crew-section__item_active');
+    if (activeCrew.length > 0) {
+      activeCrew.siblings('.crew-section__item').removeClass('crew-section__item_active');
+      $(e.currentTarget).closest('.crew-section__item').addClass('crew-section__item_active');
     }
   });
 });
@@ -158,6 +171,7 @@ $(".close-modal").click(e => {
 })
 
 //colors
+
 $(document).ready(() => {
 
   $('.colors-section__trigger').on('click', e => {
@@ -165,14 +179,144 @@ $(document).ready(() => {
 
     $(e.currentTarget).closest('.colors-section__item').toggleClass('colors-section__item_active');
 
-    // const item = $(e.currentTarget).closest('.colors-section__item');
-    // $('.colors-section__item').filter(() => {
-    //   (item).removeClass('colors-section__item_active');
-    // }
-    // if (item.hasClass('colors-section__item_active')) {
-    //   $(e.currentTarget).closest().removeClass('colors-section__item_active');
-    // }
+    const activeDesc = $('.colors-section__item_active');
+    if (activeDesc.length > 0) {
+      activeDesc.siblings('.colors-section__item').removeClass('colors-section__item_active');
+      $(e.currentTarget).closest('.colors-section__item').addClass('colors-section__item_active');
+    }
   });
 });
 
+
+//player
+
+let video = player__video
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let player;
+// const playerContainer = $(".player");
+
+
+// let eventsInit = () => {
+//   $(".player__start").click(e => {
+//     e.preventDefault();
+
+//     if (playerContainer.hasClass("paused")) {
+//       player.pauseVideo();
+//     } else {
+//       player.playVideo();
+//     }
+//   });
+
+//   $(".player__playback").click(e => {
+//     const bar = $(e.currentTarget);
+//     const clickedPosition = e.originalEvent.layerX;
+
+//     const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+//     const newPlaybackPositionSec = (player.getDuration() / 100) * newButtonPositionPercent;
+
+//     $(".player__playback-button").css({
+//       left: `${newButtonPositionPercent}%`
+//     });
+
+//     player.seekTo(newPlaybackPositionSec);
+//   });
+
+//   $(".player__splash").click(e => {
+//     player.playVideo();
+//   })
+// };
+
+
+// const formatTime = timeSec => {
+//   const roundTime = Math.round(timeSec);
+
+//   const minutes = addZero(Math.floor(roundTime / 60));
+//   const seconds = addZero(roundTime - minutes * 60);
+
+//   function addZero(num) {
+//     return num < 10 ? `0${num}` : num;
+//   }
+
+//   return `${minutes} : ${seconds}`;
+// };
+
+
+// const onPlayerReady = () => {
+//   let interval;
+//   const durationSec = player.getDuration();
+
+//   $(".player__duration-estimate").text(formatTime(durationSec));
+
+//   if (typeof interval !== "undefined") {
+//     clearInterval(interval);
+//   }
+
+//   interval = setInterval(() => {
+//     const completedSec = player.getCurrentTime();
+//     const completedPercent = (completedSec / durationSec) * 100;
+
+//     $(".player__playback-button").css({
+//       left: `${completedPercent}%`
+//     });
+
+//     $(".player__duration-completed").text(formatTime(completedSec));
+//   }, 1000);
+// };
+
+// const onPlayerStateChange = event => {
+//   switch (event.data) {
+//     case 1: //pause
+//       playerContainer.addClass("active");
+//       playerContainer.addClass("paused");
+//       break;
+
+//     case 2: //play
+//       playerContainer.removeClass("active");
+//       playerContainer.removeClass("paused");
+//       break;
+//   }
+// };
+
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player("yt-player", {
+//     height: '390',
+//     width: '660',
+//     videoId: 'gvYNxcZQ3B4',
+//     events: {
+//       'onReady': onPlayerReady,
+//       'onStateChange': onPlayerStateChange
+//     },
+//     playerVars: {
+//       controls: 0,
+//       disablekb: 1,
+//       showinfo: 0,
+//       rel: 0,
+//       autoplay: 0,
+//       modestbranding: 1
+//     }
+//   });
+// }
+
+// eventsInit();
 

@@ -208,11 +208,12 @@
   }
 }
 
-// .crew-section__img {
-//   @include tablets {
-
-//   }
-// }
+.crew-section__item_active .mini-drop {
+  @include tablets {
+    height: 330px;
+    transition: height .4s;
+  }
+}
 
 .crew-section__item {
   @include tablets {
@@ -236,9 +237,24 @@
 
 .colors-section__item_active .colors-section__description {
   @include tablets {
-    // flex-shrink: 0;
+    flex-shrink: 0;
     width: 100%;
-    transition: width .4s;
+    transition: width .2s;
+  }
+}
+
+.colors-section .title-block {
+  @include laptops {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+  }
+}
+
+.colors-section__trigger {
+  @include tablets {
+    width: 4.375rem;
+    flex-shrink: 0;
   }
 }
 
@@ -323,11 +339,33 @@
   }
 }
 
+.text-block__img {
+  @include phones {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+  }
+}
+
 .text-block .text-block__img {
   @include phones {
-    padding: 5.5%;
     margin-right: 1.125rem;
     margin-bottom: 0;
+
+    .battery {
+      width: 50px;
+      height: 50px;
+    }
+
+    .sound {
+      width: 50px;
+      height: 50px;
+    }
+
+    .time {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 
@@ -371,6 +409,32 @@
 .pentagon {
   @include phones {
     right: 2.125rem;
+  }
+}
+
+
+.player__elem {
+  @include phones {
+    width: 290px;
+    height: 200px;
+  }
+}
+
+.player__start {
+  @include phones {
+    margin-right: 7px;
+  }
+}
+
+.player__playback {
+  @include phones {
+    margin-right: 7px;
+  }
+}
+
+.player__duration {
+  @include phones {
+    font-size: 0.75rem;
   }
 }
 
