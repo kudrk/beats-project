@@ -1248,6 +1248,9 @@ button {
   background: url(../../img/splash.png) center center no-repeat;
   cursor: pointer; }
 
+.player.active .player__splash {
+  opacity: 0; }
+
 .player__start {
   background: url(../../img/splash.png) center center no-repeat;
   display: block;
@@ -1255,7 +1258,7 @@ button {
   height: 0.9375rem;
   background-size: contain; }
 
-.paused .player__start {
+.player__start.act {
   background: url(../../img/icons/pause.png) center center no-repeat;
   display: block;
   width: 1.5625rem;
@@ -1460,6 +1463,11 @@ button {
   .colors-section__trigger {
     width: 4.375rem;
     flex-shrink: 0; } }
+
+@media screen and (max-width: 480px) {
+  .colors-section__description p {
+    margin: 10% 25% 10% 10%;
+    font-size: small; } }
 
 @media screen and (max-width: 768px) {
   .review {

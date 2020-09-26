@@ -258,6 +258,13 @@
   }
 }
 
+.colors-section__description p {
+  @include phones {
+    margin: 10% 25% 10% 10%;
+    font-size: small;
+  }
+}
+
 
 
 .review {

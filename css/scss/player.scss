@@ -77,9 +77,9 @@
   cursor: pointer;
 }
 
-// .player.active .player__splash {
-//   display: none;
-// }
+.player.active .player__splash {
+  opacity: 0;
+}
 
 .player__start {
   background: url(../../img/splash.png) center center no-repeat;
@@ -89,13 +89,15 @@
   background-size: contain;
 }
 
-.paused .player__start {
+.player__start.act {
   background: url(../../img/icons/pause.png) center center no-repeat;
   display: block;
   width: 1.5625rem;
   height: 1.5625rem;
   background-size: contain;
+  
 }
+
 
 .player__playback {
   height: 0.25rem;
@@ -132,4 +134,3 @@
   height: 1.5625rem;
   background-size: contain;
 }
-

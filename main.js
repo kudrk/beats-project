@@ -188,30 +188,89 @@ $(document).ready(() => {
 });
 
 
-//player
+//player all
 
-let video = player__video
+const video = document.querySelector('#player__video');
+const playback = $('.player__playback');
+const player = $('.player');
+const play = document.querySelector('#play');
+const splash = document.querySelector('#splash');
+const start = $('.player__start');
+
+play.addEventListener('click', e => {
+  player.toggleClass('active');
+  start.toggleClass('act');
+  if (video.paused) {
+    video.play()
+  }
+  else {
+    video.pause()
+  }
+});
+
+splash.addEventListener('click', e => {
+  player.toggleClass('active');
+  start.toggleClass('act');
+  if (video.paused) {
+    video.play();
+  }
+  else {
+    video.pause();
+  }
+});
+
+
+//звук
+const sound = document.querySelector('#volume');
+const max_sound = 100;
+sound.min = 0;
+sound.max = max_sound;
+
+sound.addEventListener('mouseup', e => {
+  video.volume = sound.value / max_sound;
+});
+
+
+//беззвуч
+const mute = document.querySelector('#mute');
+let numOfClicks = 0;
+mute.addEventListener('click', e => {
+  ++numOfClicks;
+  if (numOfClicks % 2 !== 0) {
+    video.muted = true
+  } else {
+    video.muted = false
+  };
+});
+
+
+//продолжительность
+
+durationControl = document.querySelector('#durationLevel');
+interval = setInterval(updateDuration);
+
+durationControl.min = 0;
+durationControl.value = 0;
+
+durationControl.addEventListener('mousedown', e => {
+  video.pause();
+  clearInterval(interval);
+});
+
+durationControl.addEventListener('mouseup', e => {
+  video.currentTime = durationControl.value;
+  interval = setInterval(updateDuration);
+});
+
+function updateDuration() {
+  durationControl.value = video.currentTime;
+};
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//вариант youtube
 
 // let player;
 // const playerContainer = $(".player");
