@@ -12,7 +12,7 @@
 
 <body id="no-scroll">
   <div class="wrapper">
-    <div class="section main-section">
+    <div class="section main-section" id="main-section">
       <div class="container container__main">
         <header class="header">
           <div class="header__col">
@@ -26,13 +26,13 @@
             <nav id="menu" class="menu">
               <div id="menu__croce" class="menu__croce"><a href="#" class="croce"></a></div>
               <ul class="menu__list">
-                <li class="menu__link"><a class="menu__link-title" href="#">О нас</a></li>
-                <li class="menu__link"><a class="menu__link-title" href="#">Наушники</a></li>
-                <li class="menu__link"><a class="menu__link-title" href="#">Команда</a></li>
-                <li class="menu__link"><a class="menu__link-title" href="#">Цвета</a></li>
-                <li class="menu__link"><a class="menu__link-title" href="#">Отзывы</a></li>
-                <li class="menu__link"><a class="menu__link-title" href="#">Как мы работаем</a></li>
-                <li class="menu__link"><a class="menu__link-title" href="#">Контакты</a></li>
+                <li class="menu__link"><a class="menu__link-title" href="#section_color_white">О нас</a></li>
+                <li class="menu__link"><a class="menu__link-title" href="#section-slider">Наушники</a></li>
+                <li class="menu__link"><a class="menu__link-title" href="#crew-section">Команда</a></li>
+                <li class="menu__link"><a class="menu__link-title" href="#colors-section">Цвета</a></li>
+                <li class="menu__link"><a class="menu__link-title" href="#review-section">Отзывы</a></li>
+                <li class="menu__link"><a class="menu__link-title" href="#player-section">Как мы работаем</a></li>
+                <li class="menu__link"><a class="menu__link-title" href="#section_type_contacts">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -89,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="section section_color_white">
+    <div class="section section_color_white" id="section_color_white">
       <div class="container">
         <div class="title-block">
           <h2 class="inner-title">Почему beats solo 3?</h2>
@@ -141,7 +141,7 @@
 
       </div>
     </div>
-    <div class="section section-slider">
+    <div class="section section-slider" id="section-slider">
       <div class="triangle"></div>
       <div class="container container_type_slider">
         <a class="arrow arrow_type_left">
@@ -248,7 +248,7 @@
       </div>
       <div class="square"></div>
     </div>
-    <div class="section section_color_white crew-section">
+    <div class="section section_color_white crew-section" id="crew-section">
       <div class="container container__crew">
         <div class="title-block">
           <h2 class="inner-title">Команда</h2>
@@ -351,7 +351,7 @@
         </ul>
       </div>
     </div>
-    <div class="section section_color_white colors-section">
+    <div class="section section_color_white colors-section" id="colors-section">
       <div class="title-block">
         <h2 class="inner-title">Цвета</h2>
       </div>
@@ -397,7 +397,7 @@
         </li>
       </ul>
     </div>
-    <div class="section section_color_white review-section">
+    <div class="section section_color_white review-section" id="review-section">
       <div class="container">
         <h2 class="inner-title">Отзывы</h2>
         <ul class="reviews">
@@ -458,13 +458,13 @@
       </div>
     </div>
 
-    <section class="section player-section">
+    <section class="section player-section" id="player-section">
       <div class="container">
         <h2 class="inner-title">Как мы работаем</h2>
         <div class="player-section__container">
           <div class="player">
             <div class="player__wrapper">
-              <video placeInLine id="player__video" class="player__video" poster="./img/solo_billie.png">
+              <video placeinline id="player__video" class="player__video" poster="./img/solo_billie.png">
                 <source src="./video/beats.mp4" type="video/mp4">
               </video>
               <div class="player__splash" id="splash"></div>
@@ -578,10 +578,8 @@
         </form>
       </div>
     </div>
-    <div class="section section_type_contacts">
-      <div class="map">
-        <img src="./img/map.png">
-      </div>
+    <div class="section section_type_contacts" id="section_type_contacts">
+      <div class="main-map" id="map"></div>
       <footer class="footer">
         <div class="container">
           <div class="footer__inner">
@@ -677,6 +675,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="main.js"></script>
   </div>
 </body>

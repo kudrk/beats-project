@@ -790,18 +790,11 @@ button {
 .section_type_contacts {
   display: flex;
   flex-direction: column;
-  position: relative; }
-  .section_type_contacts img {
-    display: block;
-    height: 100%;
+  position: relative;
+  padding: 0; }
+  .section_type_contacts .main-map {
     width: 100%;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto; }
-
-.map {
-  width: 100%;
-  height: 100%; }
+    height: 100%; }
 
 .footer {
   width: 100%;
