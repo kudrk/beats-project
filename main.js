@@ -13,7 +13,11 @@ $(document).ready(() => {
 
   });
   hamburger.on('click', e => {
-    $(e.currentTarget).closest('#no-scroll').toggleClass('no-scroll');
+    $(e.currentTarget).closest('#no-scroll').addClass('no-scroll');
+  });
+  closeMenu.on('click', e => {
+    $(e.currentTarget).closest('.menu').removeClass('menu_fullscreen');
+    $(e.currentTarget).closest('#no-scroll').removeClass('no-scroll');
   });
 });
 

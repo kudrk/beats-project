@@ -310,7 +310,7 @@ html {
   font-size: 16px;
   height: 100%; }
 
-.no-scroll {
+body.no-scroll {
   overflow: hidden; }
 
 @media (max-width: 768px) {
