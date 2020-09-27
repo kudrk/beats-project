@@ -510,6 +510,8 @@ $(window).on("keydown", e => {
   }
 });
 
+$(".wrapper").on("toucmove", e => e.preventDefault());
+
 $("[data-scroll-to]").click(e => {
   e.preventDefault();
 
