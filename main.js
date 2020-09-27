@@ -419,8 +419,10 @@ const sections = $(".section");
 const display = $(".main-content");
 const sideMenu = $(".fixed__list");
 let inScroll = false;
-const menuItems = sideMenu.find(".fixed__item")
+const menuItems = sideMenu.find(".fixed__item");
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 sections.first().addClass("active");
 
@@ -510,7 +512,7 @@ $(window).on("keydown", e => {
   }
 });
 
-$(".wrapper").on("toucmove", e => e.preventDefault());
+$(".wrapper").on("touchmove", e => e.preventDefault());
 
 $("[data-scroll-to]").click(e => {
   e.preventDefault();
@@ -522,18 +524,21 @@ $("[data-scroll-to]").click(e => {
   performTransition(reqSection.index());
 });
 
-//touch устройства https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-$("body").swipe({
-  swipe: function (event, direction) {
-    const scroller = viewportScroller();
-    let scrollDirection = "";
 
-    if (direction === "up") scrollDirection = "next";
-    if (direction === "down") scrollDirection = "prev";
+if (isMobile) {
+  //touch устройства https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+  $("body").swipe({
+    swipe: function (event, direction) {
+      const scroller = viewportScroller();
+      let scrollDirection = "";
 
-    scroller[scrollDirection]();
-  },
-});
+      if (direction === "up") scrollDirection = "next";
+      if (direction === "down") scrollDirection = "prev";
+
+      scroller[scrollDirection]();
+    },
+  });
+}
 
 
 
