@@ -1,22 +1,22 @@
 //hamburger menu
 
-const overlay = document.getElementById('menu');
-const closeMenu = document.getElementById('menu__croce');
-const hamburger = document.querySelector('.hamburger');
-const noscroll = document.querySelector('#no-scroll');
 
+const overlay = $('#menu');
+const closeMenu = $('#menu__croce');
+const hamburger = $('#hamburger');
+const noscroll = $('#no-scroll');
 
-document.getElementById('hamburger').addEventListener('click', function () {
-  overlay.classList.add('menu_fullscreen');
-  document.getElementById('no-scroll');
-  noscroll.classList.add('no-scroll');
+$(document).ready(() => {
+
+  hamburger.on('click', e => {
+    $(e.currentTarget).prevAll('.header__col_center').find('.menu').toggleClass('menu_fullscreen');
+
+  });
+  hamburger.on('click', e => {
+    $(e.currentTarget).closest('#no-scroll').toggleClass('no-scroll');
+  });
 });
 
-document.getElementById('menu__croce').addEventListener('click', function () {
-  overlay.classList.remove('menu_fullscreen');
-  document.getElementById('no-scroll');
-  noscroll.classList.remove('no-scroll');
-})
 
 
 // drop первый вариант
