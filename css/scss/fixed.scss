@@ -13,7 +13,9 @@
 
 .fixed__item {
   margin-bottom: 0.2188rem;
+  cursor: pointer;
 
+  &:hover,
   &_active {
     .fixed__link {
       border-color: #E01F3D;
