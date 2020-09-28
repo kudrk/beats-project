@@ -46,6 +46,14 @@
   }
 }
 
+.menu-mobile{
+  display: none;
+}
+
+.menu-mobile.menu_fullscreen{
+  display: flex;
+}
+
 .menu_fullscreen {
   position: fixed;
   top: 0;
@@ -61,6 +69,7 @@
 
   .croce {
     display: block;
+    cursor: pointer;
   }
 
   .menu__list {
