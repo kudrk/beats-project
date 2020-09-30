@@ -1,0 +1,36 @@
+.dropdown__info {
+  background: rgb(255, 255, 255);
+  width: 18.375rem;
+  border-radius: 4px;
+  padding: 1.5625rem;
+  display: none;
+  position: absolute;
+  left: 100%;;
+  top: 0px;
+
+
+  .dropdown__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  .dropdown__item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+
+
+    img {
+      width: 25px;
+      margin-right: 20px;
+    }
+
+    span {
+      margin-left: auto;
+    }
+  }
+}
+
+.section-slider__box:hover .dropdown__info {
+  display: block;
+}

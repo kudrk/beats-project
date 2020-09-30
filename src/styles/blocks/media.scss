@@ -1,0 +1,510 @@
+//breakpoints
+$laptops:1024px;
+$tablets:768px;
+$phones:480px;
+$mini:350px;
+
+@mixin laptops {
+  @media screen and (max-width: $laptops) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@mixin mini {
+  @media screen and (max-width: $mini) {
+    @content;
+  }
+}
+
+.fixed {
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
+.header__contacts {
+  @include tablets {
+    display: none;
+  }
+}
+
+.specifications {
+  @include tablets {
+    display: none;
+  }
+}
+
+.hero__img {
+  @include tablets {
+    display: none;
+  }
+}
+
+.hero {
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 0;
+
+    &::before {
+      content: url(../../img/headphones_mini.png);
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+
+.hero::before {
+  @include mini {
+    content: "";
+    background-image: url(../../img/headphones_mini.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 230px;
+  }
+}
+
+.hero__title {
+  @include tablets {
+    max-width: 40rem;
+  }
+}
+
+.hamburger {
+  @include tablets {
+    display: inline-flex;
+  }
+}
+
+.menu_fullscreen {
+  @include tablets {
+    display: flex;
+  }
+}
+
+
+.section-slider__inner {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.section-slider__box {
+  @include tablets {
+    display: none;
+  }
+}
+
+.section-slider__pic {
+  @include tablets {
+    margin: 0 0 5%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    // max-width: 40%;
+  }
+}
+
+.section-slider__description {
+  @include tablets {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.section-slider .inner-title {
+  @include tablets {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 0.875rem;
+  }
+}
+
+.technical {
+  @include tablets {
+    justify-content: space-evenly;
+  }
+}
+
+.technical__charging,
+.technical__weight {
+  @include tablets {
+    max-width: 3.875rem;
+    margin-right: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.price {
+  @include tablets {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.arrow {
+  @include laptops {
+    display: none;
+  }
+}
+
+.arrow {
+  @include tablets {
+    display: block;
+    top: 35%;
+  }
+}
+
+.arrow {
+  @include phones {
+    display: block;
+    top: 25%;
+  }
+}
+
+.arrow {
+  @include mini {
+    display: block;
+    top: 23%;
+  }
+}
+
+.container__crew {
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+
+.crew-section__list {
+  @include tablets {
+    display: none;
+  }
+}
+
+.crew-section__item_active .mini-drop {
+  @include tablets {
+    height: 330px;
+    transition: height .4s;
+  }
+}
+
+.crew-section__item {
+  @include tablets {
+    margin-bottom: 15px;
+  }
+}
+
+.crew-section__mini-list .mini-drop {
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.crew-section__mini-list {
+  @include tablets {
+    display: flex;
+  }
+}
+
+
+.colors-section__item_active .colors-section__description {
+  @include tablets {
+    flex-shrink: 0;
+    width: 100%;
+    transition: width .2s;
+  }
+}
+
+.colors-section .title-block {
+  @include laptops {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+  }
+}
+
+.colors-section__trigger {
+  @include tablets {
+    width: 4.375rem;
+    flex-shrink: 0;
+  }
+}
+
+.colors-section__description p {
+  @include phones {
+    margin: 10% 25% 10% 10%;
+    font-size: small;
+  }
+}
+
+
+
+.review {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.review__comment {
+  @include tablets {
+    align-items: center;
+  }
+}
+
+.review .description {
+  @include tablets {
+    text-align: center;
+    margin: 2% 0;
+  }
+}
+
+.review__img {
+  @include tablets {
+    width: 8.125rem;
+    height: 8.125rem;
+  }
+}
+
+.section {
+  @include tablets {
+    min-height: inherit;
+  }
+}
+
+.section_type_form {
+  @include tablets {
+    padding: 10%;
+  }
+}
+
+.form {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.form__buttons {
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.form__input_textarea {
+  @include phones {
+    min-height: 1.625rem;
+  }
+}
+
+.text-block__list {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.text-block__item {
+  @include phones {
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+    align-items: flex-start;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+.text-block__img {
+  @include phones {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+  }
+}
+
+.text-block .text-block__img {
+  @include phones {
+    margin-right: 1.125rem;
+    margin-bottom: 0;
+
+    .battery {
+      width: 50px;
+      height: 50px;
+    }
+
+    .sound {
+      width: 50px;
+      height: 50px;
+    }
+
+    .time {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.text-block__desc {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      text-align: start;
+    }
+  }
+}
+
+
+.text-block__item::before {
+  @include phones {
+    display: none;
+  }
+}
+
+.title-block .description_theme_light {
+  @include phones {
+    padding: 1% 7%;
+  }
+}
+
+.review::before {
+  @include phones {
+    display: none;
+  }
+}
+
+.section_type_form {
+  @include phones {
+    padding: 10% 0;
+  }
+}
+
+.pentagon {
+  @include phones {
+    right: 2.125rem;
+  }
+}
+
+
+.player__elem {
+  @include phones {
+    width: 290px;
+    height: 200px;
+  }
+}
+
+.player__start {
+  @include phones {
+    margin-right: 7px;
+  }
+}
+
+.player__playback {
+  @include phones {
+    margin-right: 7px;
+  }
+}
+
+.player__duration {
+  @include phones {
+    font-size: 0.75rem;
+  }
+}
+
+.form {
+  @include phones {
+    padding: 3.5% 0;
+
+    &__col {
+      @include phones {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.cntrls {
+  @include phones {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form__row {
+    @include mini {
+      display: flex;
+      font-size: small;
+      margin-bottom: 3%;
+    }
+  }
+}
+
+.form__group_checkbox {
+  @include phones {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 3%;
+  }
+
+  @include mini {
+    font-size: small;
+  }
+}
+
+.form__row {
+  @include phones {
+    margin-bottom: 0.125rem;
+  }
+}
+
+.footer__inner {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__col .contacts {
+  @include phones {
+    align-items: center;
+  }
+}
